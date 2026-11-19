@@ -1,0 +1,2770 @@
+This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.11.19)  19 NOV 2026 11:11
+ restricted system commands enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2026-11-01>
+L3 programming layer <2026-09-09>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "C:/Users/ron/AppData/Local/MiKTeX/l
+uatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/luatex/luaotfload/fon
+tloader-2023-12-28.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/ron/AppData/Local/MiKTeX/l
+uatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (./civicshield.cls
+Document Class: civicshield 2026/11/19 v1.0 CivicShield AI National Tender Repo
+rt Class
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/base/report.cls
+Document Class: report 2026-06-04 v1.4n Standard LaTeX document class
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/base/size11.clo
+File: size11.clo 2026-06-04 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/ron/AppData/Local/MiK
+TeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count274
+\c@chapter=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen149
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty
+Package: geometry 2026/11/03 v6.1 Page Geometry
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty
+Package: keyval 2026-06-01 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen150
+\Gm@wd@mp=\dimen151
+\Gm@odd@mp=\dimen152
+\Gm@even@mp=\dimen153
+\Gm@layoutwidth=\dimen154
+\Gm@layoutheight=\dimen155
+\Gm@layouthoffset=\dimen156
+\Gm@layoutvoffset=\dimen157
+\Gm@dimlist=\toks18
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel.sty
+Package: babel 2026/11/10 v26.16 The multilingual framework for LuaLaTeX, pdfLa
+TeX and XeLaTeX
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/babel/luababel.def
+\bbl@readstream=\read2
+\l@afrikaans=\language2
+Package babel Info: Non-standard hyphenation setup on input line 118.
+\l@ancientgreek=\language3
+\l@armenian=\language4
+\l@assamese=\language5
+\l@basque=\language6
+\l@belarusian=\language7
+\l@bengali=\language8
+\l@bokmal=\language9
+\l@bulgarian=\language10
+\l@catalan=\language11
+\l@churchslavonic=\language12
+\l@classiclatin=\language13
+\l@coptic=\language14
+\l@croatian=\language15
+\l@czech=\language16
+\l@danish=\language17
+\l@dutch=\language18
+\l@esperanto=\language19
+\l@estonian=\language20
+\l@ethiopic=\language21
+\l@finnish=\language22
+\l@french=\language23
+\l@friulan=\language24
+\l@galician=\language25
+\l@georgian=\language26
+\l@german=\language27
+\l@greek=\language28
+\l@gujarati=\language29
+\l@hindi=\language30
+\l@hungarian=\language31
+\l@icelandic=\language32
+\l@indonesian=\language33
+\l@interlingua=\language34
+\l@irish=\language35
+\l@italian=\language36
+\l@kannada=\language37
+\l@kurmanji=\language38
+\l@latin=\language39
+\l@latvian=\language40
+\l@lithuanian=\language41
+\l@liturgicallatin=\language42
+\l@macedonian=\language43
+\l@malayalam=\language44
+\l@marathi=\language45
+\l@mongolian=\language46
+\l@mongolianlmc=\language47
+\l@monogreek=\language48
+\l@ngerman=\language49
+\l@nynorsk=\language50
+\l@occitan=\language51
+\l@oriya=\language52
+\l@pali=\language53
+\l@panjabi=\language54
+\l@piedmontese=\language55
+\l@polish=\language56
+\l@portuguese=\language57
+\l@romanian=\language58
+\l@romansh=\language59
+\l@russian=\language60
+\l@sanskrit=\language61
+\l@serbian=\language62
+\l@serbianc=\language63
+\l@slovak=\language64
+\l@slovenian=\language65
+\l@spanish=\language66
+\l@swedish=\language67
+\l@swissgerman=\language68
+\l@tamil=\language69
+\l@telugu=\language70
+\l@thai=\language71
+\l@turkish=\language72
+\l@turkmen=\language73
+\l@ukenglish=\language74
+\l@ukrainian=\language75
+\l@uppersorbian=\language76
+\l@usenglishmax=\language77
+\l@welsh=\language78
+\babelcatcodetablenum=\catcodetable14
+\bbl@pattcodes=\catcodetable15
+)
+\babel@savecnt=\count286
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2100.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2102.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2104.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2105.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2106.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2108.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2133.
+\U@D=\dimen158
+\l@unhyphenated=\language79
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/babel/luababel.def
+\bbl@attr@locale=\attribute4
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/luatex/luatexbase/luatexbase.st
+y
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/luatex/ctablestack/ctablestack.
+sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count287
+)
+\CatcodeTableOther=\catcodetable16
+\CatcodeTableExpl=\catcodetable17
+)
+Removing  `luaotfload.node_processor' from `pre_linebreak_filter'.
+Inserting `Babel.pre_otfload_v' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Removing  `luaotfload.node_processor' from `hpack_filter'.
+Removing  `luaotfload.harf.finalize_hlist' from `hpack_filter'.
+Inserting `Babel.pre_otfload_h' in `hpack_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `Babel.reset_lines' in `post_linebreak_filter'.
+\bbl@attr@dir=\attribute5
+\everyvbox=\toks19
+)
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4357.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+Package babel Info: You haven't specified a language as a class or package
+(babel)             option. I'll load 'nil'. Reported on input line 4416.
+Package babel Info: Importing font and identification data for 'nil'
+(babel)             from babel-und-x-nil.ini. Reported on input line 4485.
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/babel/nil.ldf
+Language: nil 2026/11/10 v26.16 Nil language
+\l@nil=\language80
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/babel/locale/he/babel-h
+ebrew.tex)
+Package babel Info: Importing data for 'hebrew'
+(babel)             from babel-he.ini. Reported on input line 15.
+\bbl@readsubstream=\read3
+Package babel Info: Hyphen rules for 'hebrew' set to \l@nil
+(babel)             (\language80). Reported on input line 15.
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/babel/locale/he/babel-h
+ebrew.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/babel/babel-ca-hebrew.t
+ex
+\bbl@cntcommon=\count288
+\bbl@hebrday=\count289
+\bbl@hebrmonth=\count290
+\bbl@hebryear=\count291
+\bbl@gregday=\count292
+\bbl@gregmonth=\count293
+\bbl@gregyear=\count294
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/babel/locale/en/babel-e
+nglish.tex)
+Package babel Info: Importing data for 'english'
+(babel)             from babel-en.ini. Reported on input line 16.
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2026/08/11 v2.9h Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2026/08/11 v2.9h Font selection for XeLaTeX and LuaLaTeX
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec-luatex.
+sty
+Package: fontspec-luatex 2026/08/11 v2.9h Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count295
+\l__fontspec_language_int=\count296
+\l__fontspec_strnum_int=\count297
+\l__fontspec_tmp_int=\count298
+\l__fontspec_tmpa_int=\count299
+\l__fontspec_tmpb_int=\count300
+\l__fontspec_tmpc_int=\count301
+\l__fontspec_em_int=\count302
+\l__fontspec_emdef_int=\count303
+\l__fontspec_strong_int=\count304
+\l__fontspec_strongdef_int=\count305
+\l__fontspec_tmpa_dim=\dimen159
+\l__fontspec_tmpb_dim=\dimen160
+\l__fontspec_tmpc_dim=\dimen161
+ (C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/base/fontenc.sty
+Package: fontenc 2026-07-31 v2.2a Standard LaTeX package
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec.cfg)))
+luaotfload | cache : Lookup cache loaded from C:/Users/ron/AppData/Local/MiKTeX/
+luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+luaotfload | db : Reload initiated (formats: otf,ttf,ttc); reason: Font "Heebo" 
+not found.
+
+Package fontspec Info: 
+(fontspec)             Language 'Hebrew' not explicitly supported within font
+(fontspec)             'Arial' with script 'Hebrew'. Check the typeset output,
+(fontspec)             and if it is okay then ignore this warning. Otherwise a
+(fontspec)             different font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Arial(0)' created for font 'Arial' with
+(fontspec)             options
+(fontspec)             [Renderer=Harfbuzz,Ligatures=TeX,Script=Hebrew,Language=
+Hebrew,RawFeature={family=rm},AutoFakeSlant=0.18].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=harf;script=hebr;language=IWR;+tlig;
+family=rm;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=harf;script=hebr;language=IWR;+tlig;
+family=rm;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=harf;script=hebr;language=IWR;+tli
+g;family=rm;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=harf;script=hebr;language=IWR;+tli
+g;family=rm;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=harf;script=hebr;language=IWR;slant=
+0.18;+tlig;family=rm;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=harf;script=hebr;language=IWR;slant=
+0.18;+tlig;family=rm;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=harf;script=hebr;language=IWR;+tli
+g;family=rm;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=harf;script=hebr;language=IWR;+tli
+g;family=rm;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             Language 'Hebrew' not explicitly supported within font
+(fontspec)             'Arial' with script 'Hebrew'. Check the typeset output,
+(fontspec)             and if it is okay then ignore this warning. Otherwise a
+(fontspec)             different font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Arial(1)' created for font 'Arial' with
+(fontspec)             options
+(fontspec)             [Renderer=Harfbuzz,Ligatures=TeX,Script=Hebrew,Language=
+Hebrew,RawFeature={family=sf},AutoFakeSlant=0.18].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=harf;script=hebr;language=IWR;+tlig;
+family=sf;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=harf;script=hebr;language=IWR;+tlig;
+family=sf;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=harf;script=hebr;language=IWR;+tli
+g;family=sf;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=harf;script=hebr;language=IWR;+tli
+g;family=sf;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=harf;script=hebr;language=IWR;slant=
+0.18;+tlig;family=sf;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=harf;script=hebr;language=IWR;slant=
+0.18;+tlig;family=sf;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=harf;script=hebr;language=IWR;+tli
+g;family=sf;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=harf;script=hebr;language=IWR;+tli
+g;family=sf;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             Script 'Hebrew' not explicitly supported within font
+(fontspec)             'Consolas'. Check the typeset output, and if it is okay
+(fontspec)             then ignore this warning. Otherwise a different font
+(fontspec)             should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Language 'Hebrew' not explicitly supported within font
+(fontspec)             'Consolas' with script 'Hebrew'. Check the typeset
+(fontspec)             output, and if it is okay then ignore this warning.
+(fontspec)             Otherwise a different font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Consolas scale = 0.88.
+
+
+Package fontspec Info: 
+(fontspec)             Consolas scale = 0.88.
+
+
+Package fontspec Info: 
+(fontspec)             Consolas/B scale = 0.88.
+
+
+Package fontspec Info: 
+(fontspec)             Consolas/I scale = 0.88.
+
+
+Package fontspec Info: 
+(fontspec)             Consolas/BI scale = 0.88.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Consolas(0)' created for font 'Consolas'
+(fontspec)             with options
+(fontspec)             [Renderer=Harfbuzz,WordSpace={1,0,0},HyphenChar=None,Pun
+ctuationSpace=WordSpace,Script=Hebrew,Language=Hebrew,RawFeature={family=tt},Sc
+ale=0.88].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.88]"name:Consolas:mode=harf;script=hebr;language
+=IWR;family=tt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.88]"name:Consolas/B:mode=harf;script=hebr;langua
+ge=IWR;family=tt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.88]"name:Consolas/I:mode=harf;script=hebr;langua
+ge=IWR;family=tt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.88]"name:Consolas/BI:mode=harf;script=hebr;langu
+age=IWR;family=tt;"
+
+LaTeX Font Info:    Font shape `TU/Consolas(0)/m/n' will be
+(Font)              scaled to size 9.63605pt on input line 40.
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/graphics-def/luatex.def
+File: luatex.def 2025/09/29 v1.2f Graphics/color driver for luatex
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphicx.sty
+Package: graphicx 2026-06-26 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/graphics/graphics.sty
+Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+)
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+) (C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2026-08-26 v2.18e AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty
+Package: amstext 2026/06/26 v2.01 AMS text
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen164
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen165
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count306
+LaTeX Info: Redefining \frac on input line 235.
+\uproot@=\count307
+\leftroot@=\count308
+LaTeX Info: Redefining \overline on input line 370.
+LaTeX Info: Redefining \colon on input line 381.
+\classnum@=\count309
+\DOTSCASE@=\count310
+LaTeX Info: Redefining \ldots on input line 467.
+LaTeX Info: Redefining \dots on input line 470.
+LaTeX Info: Redefining \cdots on input line 591.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 693.
+LaTeX Info: Redefining \Big on input line 694.
+LaTeX Info: Redefining \bigg on input line 695.
+LaTeX Info: Redefining \Bigg on input line 696.
+\big@size=\dimen166
+LaTeX Font Info:    Redeclaring font encoding OML on input line 714.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 715.
+\macc@depth=\count311
+LaTeX Info: Redefining \bmod on input line 876.
+LaTeX Info: Redefining \pmod on input line 881.
+LaTeX Info: Redefining \smash on input line 911.
+LaTeX Info: Redefining \relbar on input line 941.
+LaTeX Info: Redefining \Relbar on input line 942.
+\c@MaxMatrixCols=\count312
+\dotsspace@=\muskip17
+\c@parentequation=\count313
+\dspbrk@lvl=\count314
+\tag@help=\toks21
+\row@=\count315
+\column@=\count316
+\maxfields@=\count317
+\andhelp@=\toks22
+\eqnshift@=\dimen167
+\alignsep@=\dimen168
+\tagshift@=\dimen169
+\tagwidth@=\dimen170
+\totwidth@=\dimen171
+\lineht@=\dimen172
+\@envbody=\toks23
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2937.
+LaTeX Info: Redefining \] on input line 2938.
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip54
+\thm@postskip=\skip55
+\thm@headsep=\skip56
+\dth@everypar=\toks30
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen173
+\lightrulewidth=\dimen174
+\cmidrulewidth=\dimen175
+\belowrulesep=\dimen176
+\belowbottomsep=\dimen177
+\aboverulesep=\dimen178
+\abovetopsep=\dimen179
+\cmidrulesep=\dimen180
+\cmidrulekern=\dimen181
+\defaultaddspace=\dimen182
+\@cmidla=\count318
+\@cmidlb=\count319
+\@aboverulesep=\dimen183
+\@belowrulesep=\dimen184
+\@thisruleclass=\count320
+\@lastruleclass=\count321
+\@thisrulewidth=\dimen185
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty
+Package: array 2026/06/26 v2.7b Tabular extension package (FMi)
+\col@sep=\dimen186
+\ar@mcellbox=\box55
+\extrarowheight=\dimen187
+\NC@list=\toks31
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box56
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty
+Package: tabularx 2026-06-01 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen188
+\TX@old@table=\dimen189
+\TX@old@col=\dimen190
+\TX@target=\dimen191
+\TX@delta=\dimen192
+\TX@cols=\count322
+\TX@ftn=\toks32
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip59
+\multirow@cntb=\count323
+\multirow@dima=\skip60
+\bigstrutjot=\dimen193
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
+
+new hooks used!!
+\minrowclearance=\skip61
+\rownum=\count324
+) (C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip62
+\enit@outerparindent=\dimen194
+\enit@toks=\toks33
+\enit@inbox=\box57
+\enit@count@id=\count325
+\enitdp@description=\count326
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count327
+\float@exts=\toks34
+\float@box=\box58
+\@float@everytoks=\toks35
+\@floatcapt=\box59
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen195
+\captionmargin=\dimen196
+\caption@leftmargin=\dimen197
+\caption@rightmargin=\dimen198
+\caption@width=\dimen199
+\caption@indent=\dimen256
+\caption@parindent=\dimen257
+\caption@hangindent=\dimen258
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count328
+\c@continuedfloat=\count329
+Package caption Info: float package is loaded.
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count330
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count331
+)
+==> First Aid for subcaption.sty applied!
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip63
+\f@nch@offset@elh=\skip64
+\f@nch@offset@erh=\skip65
+\f@nch@offset@olh=\skip66
+\f@nch@offset@orh=\skip67
+\f@nch@offset@elf=\skip68
+\f@nch@offset@erf=\skip69
+\f@nch@offset@olf=\skip70
+\f@nch@offset@orf=\skip71
+\f@nch@height=\skip72
+\f@nch@footalignment=\skip73
+\f@nch@widthL=\skip74
+\f@nch@widthC=\skip75
+\f@nch@widthR=\skip76
+\@temptokenb=\toks36
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box60
+\beforetitleunit=\skip77
+\aftertitleunit=\skip78
+\ttl@plus=\dimen259
+\ttl@minus=\dimen260
+\ttl@toksa=\toks37
+\titlewidth=\dimen261
+\titlewidthlast=\dimen262
+\titlewidthfirst=\dimen263
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2025/01/04 v2.17 TOC entries
+\ttl@leftsep=\dimen264
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2026/05/28 version 6.10.0 text color boxes
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pgf/frontendlayer/tikz.st
+y (C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgf.sty
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil-c
+ommon.tex
+\pgfutil@everybye=\toks38
+\pgfutil@tempdima=\dimen265
+\pgfutil@tempdimb=\dimen266
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil-l
+atex.def
+\pgfutil@abb=\box61
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfrcs.co
+de.tex
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2026-08-01 v3.1.12 (3.1.12)
+))
+Package: pgf 2026-08-01 v3.1.12 (3.1.12)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pgf/basiclayer/pgfcore.st
+y
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pgf/systemlayer/pgfsys.st
+y
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys.
+code.tex
+Package: pgfsys 2026-08-01 v3.1.12 (3.1.12)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys.c
+ode.tex
+\pgfkeys@pathtoks=\toks39
+\pgfkeys@temptoks=\toks40
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeysli
+braryfiltered.code.tex
+\pgfkeys@tmptoks=\toks41
+))
+\pgf@x=\dimen267
+\pgf@y=\dimen268
+\pgf@xa=\dimen269
+\pgf@ya=\dimen270
+\pgf@xb=\dimen271
+\pgf@yb=\dimen272
+\pgf@xc=\dimen273
+\pgf@yc=\dimen274
+\pgf@xd=\dimen275
+\pgf@yd=\dimen276
+\w@pgf@writea=\write3
+\r@pgf@reada=\read4
+\c@pgf@counta=\count332
+\c@pgf@countb=\count333
+\c@pgf@countc=\count334
+\c@pgf@countd=\count335
+\t@pgf@toka=\toks42
+\t@pgf@tokb=\toks43
+\t@pgf@tokc=\toks44
+\pgf@sys@id@count=\count336
+Lua function pgfsys@strcmp = 31
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2026-08-01 v3.1.12 (3.1.12)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys-
+luatex.def
+File: pgfsys-luatex.def 2026-08-01 v3.1.12 (3.1.12)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsys-
+common-pdf.def
+File: pgfsys-common-pdf.def 2026-08-01 v3.1.12 (3.1.12)
+)))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsyss
+oftpath.code.tex
+File: pgfsyssoftpath.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfsyssoftpath@smallbuffer@items=\count337
+\pgfsyssoftpath@bigbuffer@items=\count338
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/systemlayer/pgfsysp
+rotocol.code.tex
+File: pgfsysprotocol.code.tex 2026-08-01 v3.1.12 (3.1.12)
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore.
+code.tex
+Package: pgfcore 2026-08-01 v3.1.12 (3.1.12)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.code.t
+ex
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathutil.co
+de.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathparser.
+code.tex
+\pgfmath@dimen=\dimen277
+\pgfmath@count=\count339
+\pgfmath@box=\box62
+\pgfmath@toks=\toks45
+\pgfmath@stack@operand=\toks46
+\pgfmath@stack@operation=\toks47
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunctio
+ns.code.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunctio
+ns.basic.code.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunctio
+ns.trigonometric.code.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunctio
+ns.random.code.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunctio
+ns.comparison.code.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunctio
+ns.base.code.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunctio
+ns.round.code.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunctio
+ns.misc.code.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfunctio
+ns.integerarithmetics.code.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathcalc.co
+de.tex)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmathfloat.c
+ode.tex
+\c@pgfmathroundto@lastzeros=\count340
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfint.code.te
+x)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcorep
+oints.code.tex
+File: pgfcorepoints.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@picminx=\dimen278
+\pgf@picmaxx=\dimen279
+\pgf@picminy=\dimen280
+\pgf@picmaxy=\dimen281
+\pgf@pathminx=\dimen282
+\pgf@pathmaxx=\dimen283
+\pgf@pathminy=\dimen284
+\pgf@pathmaxy=\dimen285
+\pgf@xx=\dimen286
+\pgf@xy=\dimen287
+\pgf@yx=\dimen288
+\pgf@yy=\dimen289
+\pgf@zx=\dimen290
+\pgf@zy=\dimen291
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcorep
+athconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@path@lastx=\dimen292
+\pgf@path@lasty=\dimen293
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcorep
+athusage.code.tex
+File: pgfcorepathusage.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@shorten@end@additional=\dimen294
+\pgf@shorten@start@additional=\dimen295
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcores
+copes.code.tex
+File: pgfcorescopes.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count341
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcoreg
+raphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgflinewidth=\dimen296
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcoret
+ransformations.code.tex
+File: pgfcoretransformations.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@pt@x=\dimen297
+\pgf@pt@y=\dimen298
+\pgf@pt@temp=\dimen299
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcoreq
+uick.code.tex
+File: pgfcorequick.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcoreo
+bjects.code.tex
+File: pgfcoreobjects.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcorep
+athprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcorea
+rrows.code.tex
+File: pgfcorearrows.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfarrowsep=\dimen300
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcores
+hade.code.tex
+File: pgfcoreshade.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@max=\dimen301
+\pgf@sys@shading@range@num=\count342
+\pgf@shadingcount=\count343
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcorei
+mage.code.tex
+File: pgfcoreimage.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcoree
+xternal.code.tex
+File: pgfcoreexternal.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfexternal@startupbox=\box66
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcorel
+ayers.code.tex
+File: pgfcorelayers.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcoret
+ransparency.code.tex
+File: pgfcoretransparency.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcorep
+atterns.code.tex
+File: pgfcorepatterns.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcorer
+df.code.tex
+File: pgfcorerdf.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodulesh
+apes.code.tex
+File: pgfmoduleshapes.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfnodeparttextbox=\box67
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodulepl
+ot.code.tex
+File: pgfmoduleplot.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfcomp
+-version-0-65.sty
+Package: pgfcomp-version-0-65 2026-08-01 v3.1.12 (3.1.12)
+\pgf@nodesepstart=\dimen302
+\pgf@nodesepend=\dimen303
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pgf/compatibility/pgfcomp
+-version-1-18.sty
+Package: pgfcomp-version-1-18 2026-08-01 v3.1.12 (3.1.12)
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgffor.sty
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkeys.sty
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfkeys.c
+ode.tex))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pgf/math/pgfmath.sty
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/math/pgfmath.code.t
+ex))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgffor.co
+de.tex
+Package: pgffor 2026-08-01 v3.1.12 (3.1.12)
+\pgffor@iter=\dimen304
+\pgffor@skip=\dimen305
+\pgffor@stack=\toks48
+\pgffor@toks=\toks49
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz/
+tikz.code.tex
+Package: tikz 2026-08-01 v3.1.12 (3.1.12)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibrar
+yplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@plot@mark@count=\count344
+\pgfplotmarksize=\dimen306
+)
+\tikz@lastx=\dimen307
+\tikz@lasty=\dimen308
+\tikz@lastxsaved=\dimen309
+\tikz@lastysaved=\dimen310
+\tikz@lastmovetox=\dimen311
+\tikz@lastmovetoy=\dimen312
+\tikzleveldistance=\dimen313
+\tikzsiblingdistance=\dimen314
+\tikz@figbox=\box68
+\tikz@figbox@bg=\box69
+\tikz@tempbox=\box70
+\tikz@tempbox@bg=\box71
+\tikztreelevel=\count345
+\tikznumberofchildren=\count346
+\tikznumberofcurrentchild=\count347
+\tikz@fig@count=\count348
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/modules/pgfmodulema
+trix.code.tex
+File: pgfmodulematrix.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfmatrixcurrentrow=\count349
+\pgfmatrixcurrentcolumn=\count350
+\pgf@matrix@numberofcolumns=\count351
+)
+\tikz@expandcount=\count352
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty
+Package: verbatim 2026-08-17 v1.5z LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks50
+\verbatim@line=\toks51
+\verbatim@in@stream=\read5
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count353
+)
+\tcb@titlebox=\box72
+\tcb@upperbox=\box73
+\tcb@lowerbox=\box74
+\tcb@phantombox=\box75
+\c@tcbbreakpart=\count354
+\c@tcblayer=\count355
+\c@tcolorbox@number=\count356
+\l__tcobox_tmpa_box=\box76
+\l__tcobox_tmpa_dim=\dimen315
+\tcb@temp=\box77
+\tcb@temp=\box78
+\tcb@temp=\box79
+\tcb@temp=\box80
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbraster.code.
+tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.10.0'
+\c@tcbrastercolumn=\count357
+\c@tcbrasterrow=\count358
+\c@tcbrasternum=\count359
+\c@tcbraster=\count360
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbskins.code.t
+ex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.10.0'
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tikzfill/tikzfill.image.s
+ty
+Package: tikzfill.image 2026/04/23 v1.2.0 Image filling library for TikZ
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tikzfill/tikzlibraryfill.
+image.code.tex
+File: tikzlibraryfill.image.code.tex 2026/04/23 v1.2.0 Image filling library
+\l__tikzfill_tmpa_dim=\dimen316
+\l__tikzfill_tmpb_dim=\dimen317
+\l__tikzfill_img_box=\box81
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbskinsjigsaw.
+code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.10.0'
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbbreakable.co
+de.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.10.0'
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pdfcol/pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+))
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box82
+\tcb@totalupperbox=\box83
+\tcb@totallowerbox=\box84
+ (C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbhooks.code.t
+ex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.10.0'
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbtheorems.cod
+e.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.10.0'
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbfitting.code
+.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.10.0'
+\tcbfitdim=\dimen318
+\tcb@lowerfitdim=\dimen319
+\tcb@upperfitdim=\dimen320
+\tcb@cur@hbadness=\count361
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcblistingsutf8
+.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.10.0'
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcblistings.cod
+e.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.10.0'
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/listings/listings.sty
+\lst@mode=\count362
+\lst@gtempboxa=\box85
+\lst@token=\toks52
+\lst@length=\count363
+\lst@currlwidth=\dimen321
+\lst@column=\count364
+\lst@pos=\count365
+\lst@lostspace=\dimen322
+\lst@width=\dimen323
+\lst@newlines=\count366
+\lst@lineno=\count367
+\lst@maxwidth=\dimen324
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count368
+\lst@skipnumbers=\count369
+\lst@framebox=\box86
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/listings/listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcblistingscore
+.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.10.0'
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbprocessing.c
+ode.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.10.0'
+)
+\c@tcblisting=\count370
+))
+Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. 
+Library `listings` is loaded instead. on input line 29.
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbexternal.cod
+e.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.10.0'
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbmagazine.cod
+e.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.10.0'
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbvignette.cod
+e.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.10.0'
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2026-08-01 v3.1.12 (3.1.12)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibrar
+yfadings.code.tex
+File: pgflibraryfadings.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/tcolorbox/tcbposter.code.
+tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.10.0'
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/pgflibrar
+yarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfarrowinset=\dimen325
+\pgfarrowlength=\dimen326
+\pgfarrowwidth=\dimen327
+\pgfarrowlinewidth=\dimen328
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shapes/pg
+flibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2026-08-01 v3.1.12 (3.1.12)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/libraries/shapes/pg
+flibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfnodepartlowerbox=\box87
+\pgfnodeparttwobox=\box88
+\pgfnodepartthreebox=\box89
+\pgfnodepartfourbox=\box90
+\pgfnodeparttwentybox=\box91
+\pgfnodepartnineteenbox=\box92
+\pgfnodeparteighteenbox=\box93
+\pgfnodepartseventeenbox=\box94
+\pgfnodepartsixteenbox=\box95
+\pgfnodepartfifteenbox=\box96
+\pgfnodepartfourteenbox=\box97
+\pgfnodepartthirteenbox=\box98
+\pgfnodeparttwelvebox=\box99
+\pgfnodepartelevenbox=\box100
+\pgfnodeparttenbox=\box101
+\pgfnodepartninebox=\box102
+\pgfnodeparteightbox=\box103
+\pgfnodepartsevenbox=\box104
+\pgfnodepartsixbox=\box105
+\pgfnodepartfivebox=\box106
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@layerbox@background=\box107
+\pgf@layerboxsaved@background=\box108
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/pgf-blur/tikzlibraryshado
+ws.blur.code.tex  v1.02, 2012/12/09
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pgf/frontendlayer/tikz/
+libraries/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)
+\pgfbs@fading@count=\count371
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-11-03 v7.01t Hypertext links for LaTeX
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/kvdefinekeys/kvdefineke
+ys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/pdftexcmds/pdftexcmds.s
+ty
+Package: pdftexcmds 2026-10-28 v0.34 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks53
+)) (C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/nameref/nameref.sty
+Package: nameref 2026-11-03 v2.60 Cross-referencing by name of section
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/gettitlestring/gettitle
+string.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count372
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen329
+\Hy@linkcounter=\count373
+\Hy@pagecounter=\count374
+ (C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-11-03 v7.01t Hyperref: PDFDocEncoding definition (HO)
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count375
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-11-03 v7.01t Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4070.
+Package hyperref Info: Hyper figures OFF on input line 4199.
+Package hyperref Info: Link nesting OFF on input line 4204.
+Package hyperref Info: Hyper index ON on input line 4207.
+Package hyperref Info: Plain pages OFF on input line 4214.
+Package hyperref Info: Backreferencing OFF on input line 4219.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4466.
+\c@Hy@tempcnt=\count376
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4805.
+\XeTeXLinkMargin=\dimen330
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/bigintcalc/bigintcalc.s
+ty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count377
+\Field@Width=\dimen331
+\Fld@charsize=\dimen332
+Package hyperref Info: Hyper figures OFF on input line 6091.
+Package hyperref Info: Link nesting OFF on input line 6096.
+Package hyperref Info: Hyper index ON on input line 6099.
+Package hyperref Info: backreferencing OFF on input line 6106.
+Package hyperref Info: Link coloring OFF on input line 6111.
+Package hyperref Info: Link coloring with OCG OFF on input line 6116.
+Package hyperref Info: PDF/A mode OFF on input line 6121.
+\Hy@abspage=\count378
+\c@Item=\count379
+\c@Hfootnote=\count380
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2026-11-03 v7.01t Hyperref driver for luaTeX
+\Fld@listcount=\count381
+\c@bookmark@seq@number=\count382
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilec
+heck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/uniquecou
+nter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip79
+))
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/l3backend-luatex
+.def
+File: l3backend-luatex.def 2026-09-09 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count383
+Inserting `l3color' in `luaotfload.parse_color'.) (./main.aux
+
+Package fontspec Info: 
+(fontspec)             Language 'English' not explicitly supported within font
+(fontspec)             'Arial' with script 'Latin'. Check the typeset output,
+(fontspec)             and if it is okay then ignore this warning. Otherwise a
+(fontspec)             different font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Arial(2)' created for font 'Arial' with
+(fontspec)             options
+(fontspec)             [Ligatures=TeX,Script=Latin,Language=English,RawFeature=
+{family=rm},AutoFakeSlant=0.18].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=node;script=latn;language=ENG;+tlig;
+family=rm;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=node;script=latn;language=ENG;+tlig;
+family=rm;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=ENG;+tli
+g;family=rm;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=ENG;+tli
+g;family=rm;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=node;script=latn;language=ENG;slant=
+0.18;+tlig;family=rm;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=node;script=latn;language=ENG;slant=
+0.18;+tlig;family=rm;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=ENG;+tli
+g;family=rm;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=ENG;+tli
+g;family=rm;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             Language 'English' not explicitly supported within font
+(fontspec)             'Arial' with script 'Latin'. Check the typeset output,
+(fontspec)             and if it is okay then ignore this warning. Otherwise a
+(fontspec)             different font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Arial(3)' created for font 'Arial' with
+(fontspec)             options
+(fontspec)             [Ligatures=TeX,Script=Latin,Language=English,RawFeature=
+{family=sf},AutoFakeSlant=0.18].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=node;script=latn;language=ENG;+tlig;
+family=sf;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=node;script=latn;language=ENG;+tlig;
+family=sf;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=ENG;+tli
+g;family=sf;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=ENG;+tli
+g;family=sf;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=node;script=latn;language=ENG;slant=
+0.18;+tlig;family=sf;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"name:Arial:mode=node;script=latn;language=ENG;slant=
+0.18;+tlig;family=sf;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=ENG;+tli
+g;family=sf;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"name:Arial/B:mode=node;script=latn;language=ENG;+tli
+g;family=sf;+smcp;"
+
+
+Package fontspec Info: 
+(fontspec)             Language 'English' not explicitly supported within font
+(fontspec)             'Consolas' with script 'Latin'. Check the typeset
+(fontspec)             output, and if it is okay then ignore this warning.
+(fontspec)             Otherwise a different font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Consolas scale = 0.88.
+
+
+Package fontspec Info: 
+(fontspec)             Consolas scale = 0.88.
+
+
+Package fontspec Info: 
+(fontspec)             Consolas/B scale = 0.88.
+
+
+Package fontspec Info: 
+(fontspec)             Consolas/I scale = 0.88.
+
+
+Package fontspec Info: 
+(fontspec)             Consolas/BI scale = 0.88.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Consolas(1)' created for font 'Consolas'
+(fontspec)             with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
+Space,Script=Latin,Language=English,RawFeature={family=tt},Scale=0.88].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.88]"name:Consolas:mode=node;script=latn;language
+=ENG;family=tt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.88]"name:Consolas/B:mode=node;script=latn;langua
+ge=ENG;family=tt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.88]"name:Consolas/I:mode=node;script=latn;langua
+ge=ENG;family=tt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.88]"name:Consolas/BI:mode=node;script=latn;langu
+age=ENG;family=tt;"
+
+LaTeX Font Info:    Font shape `TU/Consolas(1)/m/n' will be
+(Font)              scaled to size 9.63605pt on input line 8.
+)
+\openout1 = main.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(59.75095pt, 478.00598pt, 59.75095pt)
+* v-part:(T,H,B)=(68.28644pt, 708.47397pt, 68.28644pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=478.00598pt
+* \textheight=708.47397pt
+* \oddsidemargin=-12.51904pt
+* \evensidemargin=-12.51904pt
+* \topmargin=-52.98355pt
+* \headheight=24.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=34.14322pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Removing  `Babel.pre_otfload_h' from `hpack_filter'.
+Removing  `luaotfload.node_processor' from `hpack_filter'.
+Removing  `luaotfload.harf.finalize_hlist' from `hpack_filter'.
+Inserting `Babel.math_box_dir' in `hpack_filter'.
+Inserting `Babel.pre_otfload_h' in `hpack_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `Babel.unset_atdir' in `pre_linebreak_filter'.
+Inserting `Babel.unset_atdir' in `hpack_filter'.
+Inserting `Babel.ensure_math_dir' in `post_mlist_to_hlist_filter'.
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 3.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 3.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 3.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 3.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 3.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 3.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 3.
+LaTeX Font Info:    Redeclaring math accent \check on input line 3.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 3.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 3.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 3.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 3.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 3.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 3.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/Arial(0)/m/n on input line 3.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 3.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/m/n on input line 3.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/m/n on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/Arial(0)/m/it on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/Arial(0)/b/n on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/Arial(1)/m/n on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/Consolas(0)/m/n on input line 3.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/Arial(0)/m/n --> TU/Arial(0)/b/n on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/Arial(0)/b/it on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/Arial(1)/b/n on input line 3.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/Consolas(0)/b/n on input line 3.
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count384
+\scratchdimen=\dimen333
+\scratchbox=\box109
+\nofMPsegments=\count385
+\nofMParguments=\count386
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count387
+\MPscratchDim=\dimen334
+\MPnumerator=\count388
+\makeMPintoPDFobject=\count389
+\everyMPtoPDFconversion=\toks55
+)
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-bas
+e.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count390
+Package hyperref Info: Link coloring OFF on input line 3.
+ (./main.out) (./main.out)
+\@outlinefile=\write4
+
+\openout4 = main.out
+Package babel Info: Main language set to 'hebrew'.
+ (./cover.tex [1
+
+{C:/Users/ron/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (./main.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+
+(C:/Users/ron/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[1
+
+
+] [2])
+\tf@toc=\write5
+
+\openout5 = main.toc
+ [3] (./main.lof
+Overfull \hbox (13.77332pt too wide) in paragraph at lines 26--26
+ [][] [][]\TU/Arial(0)/m/n/10.95 סימולציית הדבקה תודעתית (S
+IRI): השוואת בדיקת עובדות מאוחרת מול חיסון פר
+ואקטיבי (Prebunking).[] [][]  
+ []
+
+)
+\tf@lof=\write6
+
+\openout6 = main.lof
+ [4
+
+
+] (./main.lot)
+\tf@lot=\write7
+
+\openout7 = main.lot
+ [5
+
+
+] (./chapters/ch1_exec.tex
+\bbl@ensure@hebrew {פרק} 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]|\TU/Arial(0)/b/n/10.95 גישת \TU/Arial(2)/b/n/10.95 Civic-Shield AI \TU/A
+rial(0)/b/n/10.95 (חיסון
+ []
+
+
+Underfull \hbox (badness 5490) in paragraph at lines 38--38
+[]|\TU/Arial(0)/m/n/10.95 לאחר ויראליות שיא (תגובה מאו
+חרת
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]|\TU/Arial(0)/b/n/10.95 מנגנון הגנה
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 38--38
+[]|\TU/Arial(0)/m/n/10.95 ועדת סוכני \TU/Arial(2)/m/n/10.95 AI \TU/Ari
+al(0)/m/n/10.95 היררכית (\TU/Arial(2)/m/n/10.95 Multi-Agent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+[]|\TU/Arial(0)/m/n/10.95 איסור אכיפה ללא חתימה משולשת;
+ []
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1
+
+
+]
+Overfull \hbox (16.86565pt too wide) in paragraph at lines 47--48
+[]\TU/Arial(0)/b/n/10.95 תגובה מאוזנת --- התראה והנגשת 
+חיסון תודעתי: \TU/Arial(0)/m/n/10.95 הפקת דוחות שקיפו
+ת טכניים ומסרי \TU/Arial(2)/m/n/10.95 Pre-bunk-ing \TU/Arial(0)/m/n
+/10.95 אובייקטיביים
+ []
+
+LaTeX Font Info:    Font shape `TU/Consolas(1)/m/n' will be
+(Font)              scaled to size 7.92004pt on input line 74.
+LaTeX Font Info:    Font shape `TU/Consolas(1)/m/n' will be
+(Font)              scaled to size 7.04004pt on input line 74.
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+[]|\TU/Arial(0)/m/n/10.95 תיאום בין תקשורת
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+\TU/Arial(0)/m/n/10.95 פוליטית ומדעי המדינה
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 105--105
+\TU/Arial(0)/m/n/10.95 מתואמת (\TU/Arial(2)/m/n/10.95 CIB\TU/Arial(0)/m/n
+/10.95 ) ורשתות
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 105--105
+[]|\TU/Arial(0)/m/n/10.95 זיהוי \TU/Arial(2)/m/n/10.95 Deep-fake \TU/Arial
+(0)/m/n/10.95 מולטי-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+[]|\TU/Arial(0)/m/n/10.95 הרצת משוואות דיפרנציאליות \TU/
+Arial(2)/m/n/10.95 SIRI \TU/Arial(0)/m/n/10.95 ומודל
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+\TU/Arial(2)/m/n/10.95 Hegselmann-Krause \TU/Arial(0)/m/n/10.95 לכימות 
+סף התפרצות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+[]|\TU/Arial(0)/m/n/10.95 זמינות גבוהה וביצועים
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 105--105
+[]|\TU/Arial(0)/m/n/10.95 ארכיטקטורת \TU/Arial(2)/m/n/10.95 M/M/c \TU
+/Arial(0)/m/n/10.95 אלסטית, השהיה ממוצעת
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+[]|\TU/Arial(0)/m/n/10.95 הגנה על חופש
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+\TU/Arial(0)/m/n/10.95 הביטוי ואיסור צנזורה
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 105--105
+[]|\TU/Arial(0)/m/n/10.95 ישימות כלכלית, תוכנית
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 105--105
+[]|\TU/Arial(0)/m/n/10.95 מתודולוגיית תזמור רב-
+ []
+
+[2] [3]) (./chapters/ch2_theory.tex [4]
+\bbl@ensure@hebrew {פרק} 2.
+[5
+
+] [6]
+Overfull \hbox (3.23698pt too wide) in paragraph at lines 50--51
+\TU/Arial(0)/m/n/10.95 כלקח מקריסת רפובליקת ויימאר: ד
+מוקרטיה אינה חייבת להפוך עצמה למצע חסר הגנ
+ה להרס עצמי של עקרונותיה [[]].
+ []
+
+(./figures/fig_public_sphere.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|\TU/Arial(0)/b/n/10.95 רכיב ב-
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 75--75
+[]|\TU/Arial(0)/m/n/10.95 Network & Trend
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+[]|\TU/Arial(0)/m/n/10.95 מסגור פוליטי
+ []
+
+
+Underfull \hbox (badness 5681) in paragraph at lines 77--77
+[]|\TU/Arial(0)/m/n/10.95 Framing Analyzer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+[]|\TU/Arial(0)/m/n/10.95 סיווג NLP ל-4 פונקציות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+[]|\TU/Arial(0)/m/n/10.95 ספירלת
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+[]|\TU/Arial(0)/m/n/10.95 אפקט רוב מזויף
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 79--80
+\TU/Arial(0)/m/n/10.95 סינכרוני ($\OT1/cmr/m/n/10.95 \OML/cmm/m/it/10.
+95 t < \OT1/cmr/m/n/10.95 2[]$\TU/Arial(0)/m/n/10.95 ) וחריגת
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 81--81
+[]|\TU/Arial(0)/m/n/10.95 קיטוב רגשי ותיבות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+[]|\TU/Arial(0)/m/n/10.95 Simulator (H-K
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+[]|\TU/Arial(0)/m/n/10.95 מודל Hegselmann-Krause,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+\TU/Arial(0)/m/n/10.95 מרחק דו-אופני (Bimodality)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[]|\TU/Arial(0)/m/n/10.95 חיסון תודעתי
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[]|\TU/Arial(0)/m/n/10.95 Prebunking
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+[]|\TU/Arial(0)/m/n/10.95 שיוך זר וחבלה
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+[]|\TU/Arial(0)/m/n/10.95 Forensic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+\TU/Arial(0)/m/n/10.95 לשוניות, אודיו וזמני פעילות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\TU/Arial(0)/m/n/10.95 דמוקרטיה
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\TU/Arial(0)/m/n/10.95 סכנת צנזורה יתר
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\TU/Arial(0)/m/n/10.95 Constitutional
+ []
+
+) (./chapters/ch3_reqs.tex [7] [8]
+\bbl@ensure@hebrew {פרק} 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/b/n/10.95 ועדת הבחירות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/m/n/10.95 הגוף הסטטוטורי
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/m/n/10.95 קבלת התראות \TU/Arial(2)/m/n/10.95 FIMI \TU
+/Arial(0)/m/n/10.95 מוקדמות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\TU/Arial(0)/m/n/10.95 והמלצות לחיסון תודעתי בלתי
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 31--31
+[]|\TU/Arial(0)/m/n/10.95 החלטות אכיפה טעונות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/b/n/10.95 מערך הסייבר
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/m/n/10.95 הגנת תשתיות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/b/n/10.95 משרד המשפטים
+ []
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 31--31
+[]|\TU/Arial(0)/m/n/10.95 הגנת זכויות יסוד
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/m/n/10.95 זכות וטו קשיחה על
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\TU/Arial(0)/m/n/10.95 פתיחת תיקים וחתימה
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/b/n/10.95 מערכות תקשורת
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/m/n/10.95 מתווך מקצועי
+ []
+
+
+Underfull \hbox (badness 7186) in paragraph at lines 31--31
+[]|\TU/Arial(0)/m/n/10.95 קבלת התראות אימות פורנזי על
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 31--31
+\TU/Arial(2)/m/n/10.95 Deep-fake \TU/Arial(0)/m/n/10.95 וחשיפת סדר י
+ום בזמן
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/m/n/10.95 ביקורת חיצונית
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/b/n/10.95 האזרח והבוחר
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\TU/Arial(0)/m/n/10.95 חסימת מעקב פרטי;
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 57--57
+[]|\TU/Arial(0)/m/n/10.95 התחברות בזמן אמת ל-\TU/Arial(2)/m/n/10
+.95 APIs \TU/Arial(0)/m/n/10.95 פומביים של רשתות
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 57--57
+[]|\TU/Arial(0)/m/n/10.95 סינון ומיסוך פרטיות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]|\TU/Arial(0)/m/n/10.95 גילוי התנהגות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]|\TU/Arial(0)/m/n/10.95 סיווג מסגור אנטמן
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]|\TU/Arial(0)/m/n/10.95 גלאי \TU/Arial(2)/m/n/10.95 Deep-fake
+ []
+
+[9
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]|\TU/Arial(0)/m/n/10.95 מנוע הדבקה
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]|\TU/Arial(0)/m/n/10.95 מדידת זליגה בין-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]|\TU/Arial(0)/m/n/10.95 מדד קיטוב ותיבות
+ []
+
+
+Underfull \hbox (badness 4765) in paragraph at lines 80--80
+[]|\TU/Arial(0)/m/n/10.95 הרצת מודל \TU/Arial(2)/m/n/10.95 Hegselmann-Kr
+ause \TU/Arial(0)/m/n/10.95 רציף להפקת
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+\TU/Arial(0)/m/n/10.95 אינדקס דו-קוטביות (\TU/Arial(2)/m/n/10.95
+ Bi-modal-ity\TU/Arial(0)/m/n/10.95 ) וזיהוי תופעות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]|\TU/Arial(0)/m/n/10.95 דירוג סמכותיות
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 80--80
+[]|\TU/Arial(0)/m/n/10.95 אימות צולב בין טענות הנוגעות 
+לנהלי הצבעה לבין
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 80--80
+[]|\TU/Arial(0)/m/n/10.95 שיוך מבצע השפעה
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 103--103
+[]|\TU/Arial(0)/m/n/10.95 מחולל חיסון תודעתי
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 103--103
+[]|\TU/Arial(0)/m/n/10.95 הצעת 3 חלופות של הודעות אזהרה 
+קוגניטיביות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
+[]|\TU/Arial(0)/m/n/10.95 חתימה משולשת
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
+\TU/Arial(0)/m/n/10.95 (\TU/Arial(2)/m/n/10.95 Triple-Key Quo-
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 103--103
+[]|\TU/Arial(0)/m/n/10.95 תיעוד שרשרת הנימוקים (\TU/Arial(2)/
+m/n/10.95 Re-Act Trace\TU/Arial(0)/m/n/10.95 ) של כל
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
+[]|\TU/Arial(0)/m/n/10.95 דשבורד שקיפות
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/Arial(0)/m/n/10.95 השהיית עיבוד
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/Arial(0)/m/n/10.95 ממוצע $\OML/cmm/m/it/10.95 < \OT1/cmr/m/n/10.95 
+250[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/Arial(0)/m/n/10.95 זמינות יום
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/Arial(0)/m/n/10.95 זמינות \TU/Arial(2)/m/n/10.95 99.99%
+ []
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 132--132
+[]|\TU/Arial(0)/m/n/10.95 שרידות מרובת-אזורים (\TU/Arial(2)/m/
+n/10.95 Multi-AZ\TU/Arial(0)/m/n/10.95 ) ו-\TU/Arial(2)/m/n/10.95 Failover
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|$[] \OML/cmm/m/it/10.95 > \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/
+m/n/10.95 96$\TU/Arial(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/Arial(0)/m/n/10.95 הוכחה מתמטית להיעדר זיהוי חו
+זר (\TU/Arial(2)/m/n/10.95 Re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/Arial(0)/m/n/10.95 שפה ומולטי-
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 132--132
+[]|\TU/Arial(0)/m/n/10.95 תמיכה מלאה בסלנג פוליטי, דיא
+לקטים וזיהוי
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/Arial(0)/m/n/10.95 שקיפות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/Arial(2)/m/n/10.95 100% \TU/Arial(0)/m/n/10.95 נימוק ראיות
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 132--132
+[]|\TU/Arial(0)/m/n/10.95 עמידות בהתקפת
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 132--132
+[]|\TU/Arial(0)/m/n/10.95 סיכול \TU/Arial(2)/m/n/10.95 Prompt In-jec-
+ []
+
+[11]
+<figures/fig1_spillover.pdf, id=574, 874.01923pt x 341.93373pt>
+File: figures/fig1_spillover.pdf Graphic file (type pdf)
+<use figures/fig1_spillover.pdf>
+Package luatex.def Info: figures/fig1_spillover.pdf  used on input line 161.
+(luatex.def)             Requested size: 478.00598pt x 187.00497pt.
+ [12]) (./chapters/ch4_arch.tex [13<./figures/fig1_spillover.pdf>]
+\bbl@ensure@hebrew {פרק} 4.
+
+Overfull \hbox (3.67886pt too wide) in paragraph at lines 11--12
+\TU/Arial(0)/m/n/10.95 דיפרנציאליים (\TU/Arial(2)/m/n/10.95 SIRI\TU
+/Arial(0)/m/n/10.95 ) או היסק בייסיאני על ספקטרום או
+דיו --- משימות אלה חייבות להתבצע בכלים דטרמי
+ניסטיים
+ []
+
+[14
+
+]
+Overfull \hbox (1.40062pt too wide) in paragraph at lines 111--112
+ [][][] 
+ []
+
+[15]
+Overfull \hbox (3.82385pt too wide) in paragraph at lines 120--121
+\TU/Arial(0)/m/n/10.95 למניעת עמימות והעברת הוראות ח
+ופשיות שעלולה לזהם את חלון ההקשר בין סוכני
+ם, כל תקשורת ב-\TU/Arial(2)/m/n/10.95 Communication
+ []
+
+\g__tcobox_out_iow=\write8
+
+\openout8 = main.listing
+(./main.listing) [16]
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+[]|\TU/Arial(0)/b/n/10.95 שכבה 2: וקטור
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+[]|\TU/Arial(0)/b/n/10.95 שכבה 4--5: שער
+ []
+
+) (./chapters/ch5_models.tex [17]
+\bbl@ensure@hebrew {פרק} 5.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 27.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 27.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 27.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 27.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 27.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 27.
+
+[18
+
+]
+<figures/fig2_siri.png, id=765, 874.2261pt x 342.5598pt>
+File: figures/fig2_siri.png Graphic file (type png)
+<use figures/fig2_siri.png>
+Package luatex.def Info: figures/fig2_siri.png  used on input line 38.
+(luatex.def)             Requested size: 458.88895pt x 179.80998pt.
+<figures/fig3_hk.png, id=767, 967.9362pt x 320.397pt>
+File: figures/fig3_hk.png Graphic file (type png)
+<use figures/fig3_hk.png>
+Package luatex.def Info: figures/fig3_hk.png  used on input line 71.
+(luatex.def)             Requested size: 468.44382pt x 155.0599pt.
+ [19<./figures/fig2_siri.png>]
+<figures/fig4_bayesian.png, id=779, 874.2261pt x 342.5598pt>
+File: figures/fig4_bayesian.png Graphic file (type png)
+<use figures/fig4_bayesian.png>
+Package luatex.def Info: figures/fig4_bayesian.png  used on input line 93.
+(luatex.def)             Requested size: 458.88895pt x 179.80998pt.
+ [20<./figures/fig3_hk.png><./figures/fig4_bayesian.png>]
+Overfull \hbox (2.84166pt too wide) in paragraph at lines 107--109
+\TU/Arial(0)/m/n/10.95 זמן ההמתנה הממוצע בתור הוא $\OML/c
+mm/m/it/10.95 W[] \OT1/cmr/m/n/10.95 = []$\TU/Arial(0)/m/n/10.95 , וזמן ה
+השהיה המערכתי הכולל בתוספת תקורת ההסקה הדט
+רמיניסטית
+ []
+
+<figures/fig5_mmc.png, id=789, 874.2261pt x 342.5598pt>
+File: figures/fig5_mmc.png Graphic file (type png)
+<use figures/fig5_mmc.png>
+Package luatex.def Info: figures/fig5_mmc.png  used on input line 119.
+(luatex.def)             Requested size: 458.88895pt x 179.80998pt.
+
+Underfull \hbox (badness 2644) in paragraph at lines 132--133
+[]|\TU/Arial(0)/m/n/10.95 מוכיח מדוע תגובת \TU/Arial(2)/m/n/10.95
+ Pre-
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 132--133
+\TU/Arial(2)/m/n/10.95 bunk-ing \TU/Arial(0)/m/n/10.95 מוקדמת חיוני
+ת
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
+[]|\TU/Arial(2)/m/n/10.95 Hegselmann-
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 133--133
+[]|\TU/Arial(0)/m/n/10.95 מניעת פיצול קטבים תוך
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+\TU/Arial(0)/m/n/10.95 ללא הנדסת אחידות
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 134--134
+[]|$[] \OML/cmm/m/it/10.95 > \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/
+m/n/10.95 96$ \TU/Arial(0)/m/n/10.95 ושימור
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+[]|\TU/Arial(0)/m/n/10.95 מבטל התראות שווא
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+\TU/Arial(0)/m/n/10.95 בפרטיות מלאה לקראת
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 135--135
+[]|\TU/Arial(0)/m/n/10.95 תצורת $\OT1/cmr/m/n/10.95 34[]$ \TU/Arial(0)/m/n
+/10.95 עומדת
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 135--136
+[]|\TU/Arial(0)/m/n/10.95 מבסס תכנון חומרה אמין
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 135--136
+\TU/Arial(0)/m/n/10.95 לליל הבחירות (\TU/Arial(2)/m/n/10.95 NFR-01,
+ []
+
+) (./chapters/ch6_law.tex [21<./figures/fig5_mmc.png>] [22]
+\bbl@ensure@hebrew {פרק} 6.
+(./figures/fig_constitutional_tree.tex) [23
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\epsilon' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 36.
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\TU/Arial(0)/m/n/10.95 הלכת ”הוודאות
+ []
+
+
+Underfull \hbox (badness 6268) in paragraph at lines 60--60
+\TU/Arial(0)/m/n/10.95 הקרובה” ודמוקרטיה
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\TU/Arial(0)/m/n/10.95 איזון הדוק בין הגנת
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+[]|\TU/Arial(0)/m/n/10.95 EU AI Act
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 62--62
+\TU/Arial(0)/m/n/10.95 Risk AI; חובת פיקוח
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 62--63
+[]|\TU/Arial(0)/m/n/10.95 עמידה במנגנון 3-of-3 Quorum וניהול 
+תיקי
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]|\TU/Arial(0)/m/n/10.95 EU Digital
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\TU/Arial(0)/m/n/10.95 Services Act
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]|\TU/Arial(0)/m/n/10.95 שקיפות אלגוריתמית,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+[]|\TU/Arial(0)/m/n/10.95 NIST AI RMF
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 66--66
+[]|\TU/Arial(0)/m/n/10.95 ניהול הטיות, הסברתיות
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 68--68
+[]|\TU/Arial(0)/m/n/10.95 דיני הגנת הפרטיות
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\TU/Arial(0)/m/n/10.95 מזעור נתונים ואיסור
+ []
+
+) (./chapters/ch7_roadmap.tex [25]
+\bbl@ensure@hebrew {פרק} 7.
+
+Underfull \hbox (badness 3281) in paragraph at lines 16--16
+\TU/Arial(0)/m/n/10.95 הפרדת הוראות מדאטה ובידוד סוכ
+נים
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 17--17
+[]|\TU/Arial(0)/m/n/10.95 הטיה מפלגתית בסיווג
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]|\TU/Arial(0)/m/n/10.95 התחמקות מתואמת
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+\TU/Arial(0)/m/n/10.95 (\TU/Arial(2)/m/n/10.95 Ad-ver-sar-ial Eva-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]|\TU/Arial(0)/m/n/10.95 איחוד $\OT1/cmr/m/n/10.95 4$ \TU/Arial(0)/m/n/10
+.95 מודאליות בייסיאני (\TU/Arial(2)/m/n/10.95 Au-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+\TU/Arial(2)/m/n/10.95 dio/Video/C2PA/Graph\TU/Arial(0)/m/n/10.95 ); התוק
+ף
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\TU/Arial(0)/m/n/10.95 צוואר בקבוק בזמן
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\TU/Arial(0)/m/n/10.95 קנה מידה דינמי ל-$\OT1/cmr/m/n/10.95 34[
+]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\TU/Arial(0)/m/n/10.95 ניצול לרעה על ידי
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+\TU/Arial(2)/m/n/10.95 Quo-rum\TU/Arial(0)/m/n/10.95 ) כולל זכות וט
+ו שיפוטית
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\TU/Arial(0)/m/n/10.95 עייפות תודעתית
+ []
+
+
+Underfull \hbox (badness 7558) in paragraph at lines 22--22
+\TU/Arial(0)/m/n/10.95 מאזהרות (\TU/Arial(2)/m/n/10.95 Alert Fa-
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 22--22
+[]|\TU/Arial(0)/m/n/10.95 תזמון אזהרות ממוקד רק בחציית 
+סף
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 22--22
+\TU/Arial(0)/m/n/10.95 התפרצות $\OML/cmm/m/it/10.95 R[] > \OT1/cmr/m/n/1
+0.95 1\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 5$ \TU/Arial(0)/m/n/10.95 והג
+בלת תדירות
+ []
+
+
+Overfull \hbox (12.20377pt too wide) in paragraph at lines 12--25
+ [][] 
+ []
+
+[26
+
+]
+Overfull \hbox (4.34776pt too wide) in paragraph at lines 33--34
+\TU/Arial(0)/m/n/10.95 הטמעת מערכת החתימה הקריפטוגרפ
+ית המשולשת, וביצוע סדרת תרגילי צוות אדום (\TU/
+Arial(2)/m/n/10.95 Red-Team Wargames\TU/Arial(0)/m/n/10.95 )
+ []
+
+(./figures/fig_gantt.tex)
+Underfull \hbox (badness 7963) in paragraph at lines 62--63
+[]|\TU/Arial(0)/b/n/10.95 נקודת איזון (\TU/Arial(2)/b/n/10.95 ROI Brea
+k-Even\TU/Arial(0)/b/n/10.95 )
+ []
+
+<figures/fig6_roi.png, id=854, 874.2261pt x 342.5598pt>
+File: figures/fig6_roi.png Graphic file (type png)
+<use figures/fig6_roi.png>
+Package luatex.def Info: figures/fig6_roi.png  used on input line 69.
+(luatex.def)             Requested size: 458.88895pt x 179.80998pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[]|\TU/Arial(0)/m/n/10.95 מדידת שיהוי ב-\TU/Arial(2)/m/n/10.95 Load 
+Test \TU/Arial(0)/m/n/10.95 מול
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 87--87
+[]|\TU/Arial(0)/m/n/10.95 זמן גילוי והפקת \TU/Arial(2)/m/n/10.95 Pr
+e-
+ []
+
+
+Underfull \hbox (badness 5475) in paragraph at lines 88--88
+[]|\TU/Arial(0)/m/n/10.95 דיוק זיהוי \TU/Arial(2)/m/n/10.95 Deep-fake
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
+[]|\TU/Arial(0)/m/n/10.95 חודשי + סקר
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+[]|\TU/Arial(0)/m/n/10.95 רציף (שער
+ []
+
+[27]) (./chapters/ch8_method.tex [28<./figures/fig6_roi.png>]
+\bbl@ensure@hebrew {פרק} 8.
+LaTeX Font Info:    Font shape `TU/Consolas(0)/b/n' will be
+(Font)              scaled to size 9.63605pt on input line 15.
+LaTeX Font Info:    Font shape `TU/Consolas(0)/b/n' will be
+(Font)              scaled to size 12.67206pt on input line 24.
+(./figures/fig_workflow.tex
+LaTeX Font Info:    Font shape `TU/Consolas(1)/b/n' will be
+(Font)              scaled to size 7.04004pt on input line 34.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]|\TU/Consolas(0)/m/n/10.95 PRD.md\TU/Arial(0)/m/n/10.95 , \TU/Consolas(0)/m/n
+/10.95 PLAN.md\TU/Arial(0)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 4181) in paragraph at lines 44--45
+[]|\TU/Arial(0)/m/n/10.95 תזמור לוח משימות והכרעה
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[]|\TU/Arial(0)/m/n/10.95 פרקים 2, 6 +
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 46--47
+[]|\TU/Arial(0)/m/n/10.95 וידוא עקביות תיאורטית ודיוק
+ []
+
+
+Overfull \hbox (13.73215pt too wide) in paragraph at lines 48--48
+[]|\TU/Consolas(0)/m/n/10.95 agents/architect/AGY.md| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--48
+[]|\TU/Arial(0)/m/n/10.95 פרקים 1, 3, 4,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+[]|\TU/Arial(0)/m/n/10.95 פיקוח על הפרדת שכבות,
+ []
+
+
+Overfull \hbox (13.73215pt too wide) in paragraph at lines 50--50
+[]|\TU/Consolas(0)/m/n/10.95 agents/simulator/AGY.md| 
+ []
+
+
+Overfull \hbox (1.2731pt too wide) in paragraph at lines 50--50
+[]|\TU/Consolas(0)/m/n/10.95 generate_figures.py\TU/Arial(0)/m/n/10.95 ,
+ []
+
+
+Overfull \hbox (3.13626pt too wide) in paragraph at lines 52--52
+[]|\TU/Consolas(0)/m/n/10.95 agents/redteam/AGY.md| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]|\TU/Consolas(0)/m/n/10.95 verify_report.py\TU/Arial(0)/m/n/10.95 ,
+ []
+
+
+Overfull \hbox (1.02498pt too wide) in paragraph at lines 60--61
+\TU/Arial(0)/m/n/10.95 יעילותה של גישת Multi-Agent נמדדת ב
+יכולתה לזהות שגיאות עוד בשלב התכנון המוקדם. 
+במהלך הכנת מהדורה 1.0
+ []
+
+[29
+
+] [30]
+Underfull \hbox (badness 5924) in paragraph at lines 70--70
+[]|\TU/Arial(0)/m/n/10.95 חשש מהנדסת דעות
+ []
+
+
+Underfull \hbox (badness 7925) in paragraph at lines 70--71
+[]|\TU/Arial(0)/m/n/10.95 הוספת עוגן אותנטיות $\OT1/cmr/m/n/10
+.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 28 \OML/cmm/m/it/10.95 x[]\OT1/cmr
+/m/n/10.95 (0)$
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 72--72
+\TU/Arial(0)/m/n/10.95 על הסרה בלעדית ללא
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+[]|\TU/Arial(0)/m/n/10.95 הוספת מפתח שלישי
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+\TU/Arial(0)/m/n/10.95 (אופוזיציה/ציבור) ב-3-of-3
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+\TU/Arial(0)/m/n/10.95 Ed25519 Quorum ועץ חוקה
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 74--74
+\TU/Arial(0)/m/n/10.95 RTL בקופסאות ובאיורי
+ []
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 74--74
+[]|\TU/Arial(0)/m/n/10.95 פגיעה בקריאות שער
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+[]|\TU/Arial(0)/m/n/10.95 פיתוח המעטפות \TU/Consolas(0)/m/n/10.95 \N
+ewEnviron
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+\TU/Arial(0)/m/n/10.95 ו-\TU/Consolas(0)/m/n/10.95 tikzhebrew \TU/Arial(0)/m/n
+/10.95 במחלקה
+ []
+
+
+Underfull \hbox (badness 4181) in paragraph at lines 76--76
+[]|\TU/Arial(0)/m/n/10.95 התאמה חלקית בגרפים
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+\TU/Arial(0)/m/n/10.95 (\TU/Consolas(0)/m/n/10.95 fig1\TU/Arial(0)/m/n/10.95 , 
+\TU/Consolas(0)/m/n/10.95 fig5\TU/Arial(0)/m/n/10.95 ) ופער
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+[]|\TU/Arial(0)/m/n/10.95 כיול גרפי שיא ו-Erlang-C
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+\TU/Arial(0)/m/n/10.95 בקובץ הפייתון ובניית סקריפט
+ []
+
+) (./chapters/bibliography.tex [31] [32
+
+]
+Underfull \hbox (badness 1895) in paragraph at lines 22--23
+\TU/Arial(0)/m/n/10.95 Psychological Inoculation Improves Resilience Against Mis
+information on Social Media.
+ []
+
+[33
+
+]
+Underfull \hbox (badness 5064) in paragraph at lines 73--74
+[]\TU/Arial(0)/m/n/10.95 European Parliament and Council (2024). Regulation (EU)
+ 2024/1689 Laying Down
+ []
+
+) [34] (./main.aux)
+ ***********
+LaTeX2e <2026-11-01>
+L3 programming layer <2026-09-09>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: E2F78E717C6755E52A6C0A2D594345EC;27995.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 38283 strings out of 475522
+ 381934,1648299 words of node,token memory allocated
+ 18035 words of node memory still in use:
+   31 hlist, 2 vlist, 14 rule, 2 glue, 4 kern, 1 glyph, 6374 attribute, 61 glue_
+spec, 2130 attribute_list, 2 write, 24 pdf_literal, 3 pdf_action, 24 pdf_colorst
+ack nodes
+   avail lists: 1:2,2:25638,3:1734,4:952,5:5052,6:157,7:10183,8:79,9:9652,10:126
+,11:537
+ 60079 multiletter control sequences out of 65536+600000
+ 148 fonts using 75268087 bytes
+ 121i,14n,118p,1015b,1375s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/WINDOWS/Fonts/consolab.ttf><C:/WINDOWS/Fonts/consolab.ttf><C:/WINDOWS/Fonts/
+consola.ttf><C:/WINDOWS/Fonts/consola.ttf><C:/WINDOWS/Fonts/arial.ttf><C:/WINDOW
+S/Fonts/arial.ttf><C:/WINDOWS/Fonts/arialbd.ttf><C:/WINDOWS/Fonts/arialbd.ttf><C
+:/Users/ron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.
+pfb><C:/Users/ron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb><C:/Users/ron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi12.pfb><C:/Users/ron/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmmi6.pfb><C:/Users/ron/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb><C:/Users/ron/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi9.pfb><C:/Users/ron/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ron/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ron/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ron/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ron/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ron/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ron/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/ron/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (40 pages, 2284144 bytes).
+
+PDF statistics: 1027 PDF objects out of 1200 (max. 8388607)
+ 214 named destinations out of 1000 (max. 1048576)
+ 784 words of extra memory for PDF output out of 10000 (max. 100000000)
+

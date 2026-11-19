@@ -1,0 +1,38 @@
+% ============================================================================
+% figures/fig_public_sphere.tex - Fig 2.1: Resilient vs. FIMI-Attacked Sphere
+% ============================================================================
+\begin{tikzhebrew}[
+  hdr/.style={rectangle, rounded corners=4pt, fill=#1, text=white, text width=6.1cm, minimum height=0.85cm, align=center, font=\small\bfseries},
+  box/.style={rectangle, rounded corners=3pt, draw=#1, line width=1pt, fill=#1!7, text width=5.8cm, minimum height=1.18cm, align=center, font=\footnotesize},
+  outbox/.style={rectangle, rounded corners=3pt, draw=#1, line width=1.2pt, fill=#1!14, text width=5.8cm, minimum height=1.18cm, align=center, font=\footnotesize},
+  arr/.style={-{Stealth[length=2.2mm]}, line width=1pt, color=#1}
+]
+  % Left Column: Resilient Deliberative Public Sphere (Teal)
+  \node[hdr=csTeal] (LH) {\heb{א. מרחב ציבורי חסין (דליברטיבי)}};
+  \node[box=csTeal, below=0.4cm of LH] (L1) {\textbf{\heb{מגוון מקורות ומסגור מאוזן}}\\[2pt]\scriptsize\heb{דיווח עיתונאי שקוף ואחריותיות מוסדית}};
+  \node[box=csTeal, below=0.45cm of L1] (L2) {\textbf{\heb{חיסון קוגניטיבי (\en{Prebunking})}}\\[2pt]\scriptsize\heb{חשיפה מוקדמת לטכניקות מניפולציה והנדסה}};
+  \node[box=csTeal, below=0.45cm of L2] (L3) {\textbf{\heb{דיאלוג חוצה-קבוצות מאומת}}\\[2pt]\scriptsize\heb{סיכול בוטים ושמירת חופש ביטוי לאזרחים}};
+  \node[outbox=csTeal, below=0.45cm of L3] (L4) {\textbf{\heb{תוצאה: לגיטימציה וטוהר בחירות}}\\[2pt]\scriptsize\heb{שימור הסמכות האפיסטמית והכרעה חופשית}};
+
+  \draw[arr=csTeal] (L1) -- (L2);
+  \draw[arr=csTeal] (L2) -- (L3);
+  \draw[arr=csTeal] (L3) -- (L4);
+
+  % Right Column: FIMI-Attacked Public Sphere (Crimson)
+  \node[hdr=csCrimson, right=1.35cm of LH] (RH) {\heb{ב. מרחב מורעל תחת מתקפת \en{FIMI}}};
+  \node[box=csCrimson, below=0.4cm of RH] (R1) {\textbf{\heb{חטיפת סדר יום (\en{Agenda Hijacking})}}\\[2pt]\scriptsize\heb{נחילי בוטים מתואמים והזרקת מסגרות עוינות}};
+  \node[box=csCrimson, below=0.45cm of R1] (R2) {\textbf{\heb{\en{Sharp Power} והתגברות \en{Deepfake}}}\\[2pt]\scriptsize\heb{ייצור משבר אמון פתאומי ב-72 השעות שלפני הקלפי}};
+  \node[box=csCrimson, below=0.45cm of R2] (R3) {\textbf{\heb{תיבות תהודה וספירלת השתיקה}}\\[2pt]\scriptsize\heb{רוב מדומה מרתיע מתונים ומעמיק קיטוב רגשי}};
+  \node[outbox=csCrimson, below=0.45cm of R3] (R4) {\textbf{\heb{תוצאה: שחיקת הלגיטימציה הדמוקרטית}}\\[2pt]\scriptsize\heb{אובדן מציאות עובדתית משותפת וניכור מוסדי}};
+
+  \draw[arr=csCrimson] (R1) -- (R2);
+  \draw[arr=csCrimson] (R2) -- (R3);
+  \draw[arr=csCrimson] (R3) -- (R4);
+
+  % Center Dashed Divider & VS Badge
+  \coordinate (MidTop) at ($(LH.east)!0.5!(RH.west) + (0,-0.5)$);
+  \coordinate (MidBot) at ($(L4.east)!0.5!(R4.west) + (0,-0.4)$);
+  \draw[dashed, color=csSlate, line width=0.9pt] (MidTop) -- (MidBot);
+  \node[circle, draw=csNavy, fill=white, line width=1.1pt, font=\bfseries\footnotesize, inner sep=3pt]
+    at ($(MidTop)!0.42!(MidBot)$) {VS};
+\end{tikzhebrew}

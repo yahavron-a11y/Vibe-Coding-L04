@@ -1,0 +1,34 @@
+% ============================================================================
+% figures/fig_workflow.tex - Fig 8.1: Multi-Agent Workflow & Red Team Loop
+% ============================================================================
+\begin{tikzhebrew}[
+  master/.style={rectangle, rounded corners=4pt, draw=csNavy, fill=csNavy, text=white, text width=6.2cm, minimum height=1.15cm, align=center, font=\footnotesize},
+  spec/.style={rectangle, rounded corners=4pt, draw=csNavy, line width=1pt, fill=csNavyBg, text width=3.2cm, minimum height=1.15cm, align=center, font=\scriptsize},
+  gate/.style={rectangle, rounded corners=4pt, draw=csCrimson, line width=1.1pt, fill=csRedBg, text width=6.4cm, minimum height=1.1cm, align=center, font=\footnotesize},
+  done/.style={rectangle, rounded corners=4pt, draw=csTeal, line width=1.2pt, fill=csTealBg, text width=8.2cm, minimum height=1.1cm, align=center, font=\footnotesize},
+  arr/.style={-{Stealth[length=2.2mm]}, line width=1pt, color=csNavy}
+]
+  \node[master] (M) {\textbf{\heb{סוכן \en{Master}: אפיון \en{PRD} והזנת לוח משימות}}\\[2pt]\scriptsize\texttt{team.json + TODO Dispatch}};
+
+  \node[spec, below=0.8cm of M] (S2) {\textbf{\heb{סוכן ארכיטקטורה}}\\[2pt]\scriptsize\heb{פרקים 1, 3, 4 + תרשימי \en{TikZ}}};
+  \node[spec, left=0.55cm of S2] (S1) {\textbf{\heb{סוכן תיאוריה ומשפט}}\\[2pt]\scriptsize\heb{פרקים 2 ו-6 + ביבליוגרפיה}};
+  \node[spec, right=0.55cm of S2] (S3) {\textbf{\heb{סוכן סימולציות \en{Python}}}\\[2pt]\scriptsize\heb{פרקים 5, 7 + 6 גרפי \en{PDF/PNG}}};
+
+  \node[gate, below=0.85cm of S2] (RT) {\textbf{\heb{שער ביקורת: צוות אדום ובדיקת \en{LuaLaTeX / BiDi}}}\\[2pt]\scriptsize\texttt{verify\_report.py + Red Team Adversarial Audit}};
+
+  \node[done, below=0.85cm of RT] (OUT) {\textbf{\heb{הפקה סופית מאושרת (\en{CivicShield\_AI\_Preliminary\_Report.pdf})}}\\[2pt]\scriptsize\heb{אפס שגיאות קימפול, דיוק מחקרי ודחיפה ל-\en{GitHub}}};
+
+  \draw[arr] (M.south) -- (S2.north);
+  \draw[arr] (M.south) -| (S1.north);
+  \draw[arr] (M.south) -| (S3.north);
+
+  \draw[arr] (S1.south) |- ([yshift=0.35cm]RT.north) -- (RT.north);
+  \draw[arr] (S2.south) -- (RT.north);
+  \draw[arr] (S3.south) |- ([yshift=0.35cm]RT.north) -- (RT.north);
+
+  \draw[arr, color=csTeal] (RT.south) -- node[right, font=\scriptsize\bfseries, csTeal]{\heb{עבר אימות מלא}} (OUT.north);
+
+  % Red Team Rejection / Fix Loop
+  \draw[arr, dashed, color=csCrimson, line width=1.1pt]
+    (RT.west) -- ++(-2.6, 0) |- node[left, pos=0.25, align=center, font=\scriptsize\bfseries, csCrimson]{\heb{דחייה לתיקון}\\[1pt]\texttt{(Fix Loop)}} (M.west);
+\end{tikzhebrew}

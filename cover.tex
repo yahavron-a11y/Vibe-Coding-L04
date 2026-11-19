@@ -1,0 +1,100 @@
+% ============================================================================
+% cover.tex - Institutional National Tender Cover Page with Vector Emblem
+% ============================================================================
+\begin{titlepage}
+\thispagestyle{empty}
+
+% --- Full-Bleed Top Hero Band & Bottom Footer Band via TikZ Overlay ---
+\begin{otherlanguage}{english}
+\begin{tikzpicture}[remember picture, overlay]
+  % Top Navy Hero Background (42% height)
+  \fill[csNavy] (current page.north west) rectangle ([yshift=-12.2cm]current page.north east);
+
+  % Subtle Geometric Grid Overlay
+  \begin{scope}
+    \clip (current page.north west) rectangle ([yshift=-12.2cm]current page.north east);
+    \draw[white, opacity=0.07, step=1.1cm] (current page.north west) grid ([yshift=-12.2cm]current page.north east);
+  \end{scope}
+
+  % Dual-Tone Divider Bar (Amber + Teal)
+  \fill[csAmber] ([yshift=-12.2cm]current page.north west) rectangle ([yshift=-12.38cm]current page.north east);
+  \fill[csTeal]  ([yshift=-12.38cm]current page.north west) rectangle ([yshift=-12.52cm]current page.north east);
+
+  % Bottom Footer Band
+  \fill[csTeal] ([yshift=2.35cm]current page.south west) rectangle ([yshift=2.22cm]current page.south east);
+  \fill[csNavy] (current page.south west) rectangle ([yshift=2.22cm]current page.south east);
+\end{tikzpicture}
+\end{otherlanguage}
+
+\vspace*{-0.8cm}
+\begin{center}
+  {\color{csAmber}\small\bfseries\en{UNIVERSITY OF HAIFA \quad|\quad NATIONAL TENDER PRELIMINARY REPORT}}\\[6pt]
+  {\color{white}\normalsize\bfseries אוניברסיטת חיפה --- קורס יישומי \en{AI} ו-\en{Vibe Coding} (ד"ר יורם סגל)}\\[1.0cm]
+
+  % --- Cover Emblem (cover_emblem) ---
+  \begin{tikzhebrew}[scale=0.95]
+    % Concentric outer rings
+    \draw[csTeal, line width=1.6pt, opacity=0.85] (0,0) circle (2.05cm);
+    \draw[csAmber, line width=0.8pt, dashed, opacity=0.75] (0,0) circle (1.78cm);
+    % Shield contour
+    \path[draw=csAmber, line width=1.8pt, fill=csNavy!85!csTeal, rounded corners=4pt]
+      (0, 1.45) -- (1.25, 0.95) -- (1.05, -0.45) -- (0, -1.45) -- (-1.05, -0.45) -- (-1.25, 0.95) -- cycle;
+    \path[draw=csTeal, line width=1.0pt, rounded corners=3pt]
+      (0, 1.25) -- (1.06, 0.82) -- (0.88, -0.38) -- (0, -1.24) -- (-0.88, -0.38) -- (-1.06, 0.82) -- cycle;
+    % 6-node internal multi-agent mesh graph
+    \coordinate (C)  at (0, 0.05);
+    \coordinate (N1) at (0, 0.85);
+    \coordinate (N2) at (0.72, 0.42);
+    \coordinate (N3) at (0.62, -0.40);
+    \coordinate (N4) at (0, -0.82);
+    \coordinate (N5) at (-0.62, -0.40);
+    \coordinate (N6) at (-0.72, 0.42);
+    \foreach \a/\b in {C/N1, C/N2, C/N3, C/N4, C/N5, C/N6, N1/N2, N2/N3, N3/N4, N4/N5, N5/N6, N6/N1} {
+      \draw[csTeal!70!white, line width=0.9pt] (\a) -- (\b);
+    }
+    \foreach \n in {N1, N2, N3, N4, N5, N6} {
+      \fill[csTeal] (\n) circle (3.2pt);
+      \draw[white, line width=0.5pt] (\n) circle (3.2pt);
+    }
+    \fill[csAmber] (C) circle (5pt);
+    \draw[white, line width=0.8pt] (C) circle (5pt);
+  \end{tikzhebrew}
+
+  \vspace{0.45cm}
+  {\color{white}\fontsize{28}{32}\selectfont\bfseries\en{CivicShield AI}}\\[6pt]
+  {\color{csAmber}\Large\bfseries מגן התודעה הלאומי}
+\end{center}
+
+\vspace{1.8cm}
+
+\begin{center}
+  {\color{csNavy}\Large\bfseries דוח מכין (\en{Preliminary Design Report}) להקמת מערכת רב-סוכנית לאומית}\\[8pt]
+  {\color{csTeal}\large\bfseries להגנה על הספירה הציבורית, זיהוי מניפולציות תודעה ושמירה על טוהר הבחירות}\\[10pt]
+  {\color{csSlate}\normalsize סינתזה בין-תחומית: מדעי המדינה, תקשורת פוליטית והנדסת מערכות \en{Multi-Agent AI}}
+\end{center}
+
+\vspace{0.9cm}
+
+\begin{tcolorbox}[
+  enhanced,
+  colback=csNavyBg,
+  colframe=csNavy,
+  arc=5pt,
+  boxrule=1pt,
+  left=16pt, right=16pt, top=14pt, bottom=14pt
+]
+  \textbf{מענה למכרז ממשלתי משותף (מדומיין לצורכי המטלה):} ועדת הבחירות המרכזית (\en{CEC}), מערך הסייבר הלאומי (\en{INCD}) ומשרד המשפטים.\\[8pt]
+  \textbf{פרדיגמת התכנון:} חיסון תודעתי פרואקטיבי (\en{Cognitive Prebunking}), ניתוח מסגור פוליטי, זיהוי רשתות בוטים ו-\en{Deepfakes} באמצעות ועדת סוכני \en{AI} מתואמת, תחת הפרדת רשויות ופיקוח שיפוטי משולש (\en{Human-in-the-Loop}).\\[8pt]
+  \textbf{מתודולוגיית הכנה:} ועדת מומחים של 5 סוכנים אוטונומיים (\en{Master, Theory, Architect, Simulator, RedTeam}) לפי עקרונות שיעור 4, בשילוב סימולציות כמותיות ב-\en{Python} וגרפיקה וקטורית ב-\en{TikZ}.
+\end{tcolorbox}
+
+\vfill
+
+\begin{center}
+  \color{white}\small
+  \textbf{קורס:} יישומי בינה מלאכותית ו-\en{Vibe Coding} (שיעור 4: \en{Multi-Agent Orchestration}) \quad|\quad \textbf{מרצה:} ד"ר יורם סגל\\[4pt]
+  \textbf{גרסה:} \en{v1.0-RFP-FINAL} \quad|\quad \textbf{תאריך הפקה:} נובמבר 2026 \quad|\quad \textbf{מזהה תיק:} \en{GOV-IL-RFP-2026-CSAI}
+\end{center}
+\vspace*{-0.6cm}
+
+\end{titlepage}

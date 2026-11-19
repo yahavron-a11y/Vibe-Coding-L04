@@ -1,0 +1,32 @@
+\documentclass{civicshield}
+
+\begin{document}
+
+% Cover Page
+\input{cover}
+
+% Front Matter
+\clearpage
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+
+% Main Body
+\pagenumbering{arabic}
+\input{chapters/ch1_exec}
+\input{chapters/ch2_theory}
+\input{chapters/ch3_reqs}
+\input{chapters/ch4_arch}
+\input{chapters/ch5_models}
+\input{chapters/ch6_law}
+\input{chapters/ch7_roadmap}
+\input{chapters/ch8_method}
+
+% Back Matter: Bibliography
+\input{chapters/bibliography}
+
+\end{document}

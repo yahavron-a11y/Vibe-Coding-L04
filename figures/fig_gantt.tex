@@ -1,0 +1,49 @@
+% ============================================================================
+% figures/fig_gantt.tex - Fig 7.1: 24-Month Engineering Roadmap Gantt Chart
+% ============================================================================
+\begin{tikzhebrew}[x=1cm, y=0.85cm]
+  % Outer Frame
+  \draw[csNavy, line width=1pt] (0, 0) rectangle (14.6, 6.2);
+
+  % Top Navy Header Band
+  \fill[csNavy] (0, 5.2) rectangle (14.6, 6.2);
+  \node[white, font=\footnotesize\bfseries] at (2.5, 5.7) {\heb{שלב / תת-תוכנית הנדסית}};
+  \node[white, font=\footnotesize\bfseries] at (9.8, 5.7) {\heb{לוח זמנים להקמה (חודשים 1 עד 24)}};
+
+  % Timeline Header Row
+  \fill[csNavyBg] (5.0, 4.55) rectangle (14.6, 5.2);
+  \draw[csBorder] (5.0, 0) -- (5.0, 5.2);
+  \foreach \x/\lbl in {5.5/M1, 7.65/M6, 9.8/M12, 11.95/M18, 14.1/M24} {
+    \node[csNavy, font=\scriptsize\bfseries] at (\x, 4.88) {\lbl};
+    \draw[csBorder, dashed] (\x, 0.85) -- (\x, 4.55);
+  }
+
+  % Row Labels (Right-aligned Hebrew inside left column)
+  \node[anchor=east, font=\scriptsize\bfseries, csNavy] at (4.85, 3.95) {\heb{שלב א': תשתיות, \en{OSINT} ו-$\epsilon$-DP}};
+  \node[anchor=east, font=\scriptsize\bfseries, csNavy] at (4.85, 3.05) {\heb{שלב ב': סוכנים, מסגור ו-\en{Deepfake}}};
+  \node[anchor=east, font=\scriptsize\bfseries, csNavy] at (4.85, 2.15) {\heb{שלב ג': שער חוקתי ומשחקי \en{RedTeam}}};
+  \node[anchor=east, font=\scriptsize\bfseries, csNavy] at (4.85, 1.25) {\heb{שלב ד': מבחני עומס \en{12k} והפעלה}};
+  \node[anchor=east, font=\scriptsize\bfseries, csAmber] at (4.85, 0.42) {\heb{מבצעיות שוטפת ומבחני שוויון}};
+
+  % Phase Bars
+  \fill[csNavy, rounded corners=2pt]    (5.5, 3.72) rectangle (7.75, 4.18);
+  \node[white, font=\tiny\bfseries] at (6.62, 3.95) {M1--M6};
+
+  \fill[csNavy!75!csTeal, rounded corners=2pt] (7.45, 2.82) rectangle (10.2, 3.28);
+  \node[white, font=\tiny\bfseries] at (8.82, 3.05) {M6--M13};
+
+  \fill[csTeal, rounded corners=2pt]    (9.6, 1.92) rectangle (12.35, 2.38);
+  \node[white, font=\tiny\bfseries] at (10.97, 2.15) {M12--M19};
+
+  \fill[csTeal!75!green!65!black, rounded corners=2pt] (11.75, 1.02) rectangle (14.2, 1.48);
+  \node[white, font=\tiny\bfseries] at (12.97, 1.25) {M18--M24};
+
+  % Milestone Diamonds
+  \foreach \mx/\my in {7.75/3.95, 10.2/3.05, 12.35/2.15, 14.2/1.25} {
+    \node[diamond, fill=csCrimson, draw=white, line width=0.5pt, inner sep=1.8pt] at (\mx, \my) {};
+  }
+
+  % Continuous Audit Bar
+  \fill[csAmber, rounded corners=2pt] (5.5, 0.2) rectangle (14.2, 0.64);
+  \node[white, font=\tiny\bfseries] at (9.85, 0.42) {\heb{ביקורת שופטים ומבדק הטיה דו-שבועי}};
+\end{tikzhebrew}

@@ -1,0 +1,21 @@
+{
+  "envelope_id": "csai-2026-11-04T08:19:42Z-0091",
+  "case_id": "CASE-EL-2026-441",
+  "sender_agent": "simulator_siri_agent",
+  "recipient_agent": "constitutional_guardrail_agent",
+  "priority": "CRITICAL_P0",
+  "trace_react": {
+    "thought": "Bot cluster velocity exceeds critical threshold; compute SIRI R0.",
+    "action": "run_siri_ode(beta=0.68, gamma=0.14, seed_fraction=0.015)",
+    "observation": {"R0": 4.86, "critical_vax_pc": 0.794, "time_to_peak_days": 6.4}
+  },
+  "evidence_metrics": {
+    "cib_sync_score": 0.93,
+    "deepfake_posterior": 0.974,
+    "entman_panic_frame": 0.88,
+    "privacy_dp_epsilon_spent": 0.14
+  },
+  "recommended_intervention": "ISSUE_NEUTRAL_PREBUNKING_TEMPLATE_B",
+  "auto_censor_permitted": false,
+  "requires_quorum_signatures": ["CEC_JUDGE", "INCD_DIRECTOR", "PUBLIC_OMBUDSMAN"]
+}

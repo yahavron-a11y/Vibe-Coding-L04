@@ -1,0 +1,36 @@
+% ============================================================================
+% figures/fig_constitutional_tree.tex - Fig 6.1: Constitutional Decision Tree
+% ============================================================================
+\begin{tikzhebrew}[
+  gate/.style={rectangle, rounded corners=4pt, draw=#1, line width=1.1pt, fill=#1!8, text width=6.6cm, minimum height=1.15cm, align=center, font=\footnotesize},
+  leaf/.style={rectangle, rounded corners=4pt, draw=#1, line width=1.1pt, fill=#1!10, text width=4.3cm, minimum height=1.1cm, align=center, font=\footnotesize},
+  pathbox/.style={rectangle, rounded corners=4pt, draw=#1, line width=1.2pt, fill=#1!10, text width=5.6cm, minimum height=1.15cm, align=center, font=\footnotesize},
+  arr/.style={-{Stealth[length=2.2mm]}, line width=1pt, color=csNavy},
+  lbl/.style={font=\scriptsize\bfseries, fill=white, inner sep=1.5pt}
+]
+  \node[gate=csNavy] (G1) {\textbf{\heb{שער 1: האם המידע נאסף מתקשורת פרטית?}}\\[2pt]\scriptsize\texttt{Private DMs / Non-Public Personal Data Check}};
+  \node[leaf=csTeal, right=1.3cm of G1] (L1) {\textbf{\heb{דחייה מיידית ומחיקה}}\\[2pt]\scriptsize\heb{חסימת \en{OSINT} קשיחה (\en{Hard Drop})}};
+
+  \node[gate=csNavy, below=0.65cm of G1] (G2) {\textbf{\heb{שער 2: האם זו דעה אזרחית אותנטית ללא \en{CIB} או זיוף?}}\\[2pt]\scriptsize\texttt{Protected Political Speech / Satire Exemption}};
+  \node[leaf=csTeal, right=1.3cm of G2] (L2) {\textbf{\heb{ביטוי פוליטי מוגן}}\\[2pt]\scriptsize\heb{אין תיוג ואין מעקב; סגירת תיק מיידית}};
+
+  \node[gate=csNavy, below=0.65cm of G2] (G3) {\textbf{\heb{שער 3: האם מתקיים $R_0 > 1.5$ ופורנזיקה $P(F\mid\mathbf{e}) \ge 0.90$?}}\\[2pt]\scriptsize\texttt{SIRI Contagion Risk + Judicial Precision Gate}};
+  \node[leaf=csSlate, right=1.3cm of G3] (L3) {\textbf{\heb{ניטור מאקרו אנונימי בלבד}}\\[2pt]\scriptsize\heb{מעקב $\epsilon$-DP ללא פעולת התערבות}};
+
+  \node[gate=csAmber, below=0.75cm of G3] (G4) {\textbf{\heb{שער 4: סוג ההתערבות המידתית הנדרשת}}\\[2pt]\scriptsize\texttt{Proportionality \& Less-Restrictive-Means Test}};
+
+  \node[pathbox=csAmber,   below left=0.85cm and -2.2cm of G4]  (PA) {\textbf{\heb{נתיב א': חיסון תודעתי אובייקטיבי}}\\[2pt]\scriptsize\heb{פרסום \en{Prebunking} על טכניקת ההונאה + שקיפות}};
+  \node[pathbox=csCrimson, below right=0.85cm and -2.2cm of G4] (PB) {\textbf{\heb{נתיב ב': עתירת הסרה קריפטוגרפית}}\\[2pt]\scriptsize\heb{חתימה משולשת (שופט + סייבר + נציג ציבור)}};
+
+  \draw[arr, color=csTeal] (G1.east) -- node[lbl, above]{\heb{כן}} (L1.west);
+  \draw[arr] (G1.south) -- node[lbl, right]{\heb{לא (גלוי)}} (G2.north);
+
+  \draw[arr, color=csTeal] (G2.east) -- node[lbl, above]{\heb{כן}} (L2.west);
+  \draw[arr] (G2.south) -- node[lbl, right]{\heb{לא (\en{CIB / FIMI})}} (G3.north);
+
+  \draw[arr, color=csSlate] (G3.east) -- node[lbl, above]{\heb{לא}} (L3.west);
+  \draw[arr] (G3.south) -- node[lbl, right]{\heb{כן}} (G4.north);
+
+  \draw[arr, color=csAmber]   (G4.south west) -| node[lbl, above left, pos=0.25]{\heb{אמצעי מידתי ראשוני}} (PA.north);
+  \draw[arr, color=csCrimson] (G4.south east) -| node[lbl, above right, pos=0.25]{\heb{זיוף בחירות פלילי / \en{FIMI} חמור}} (PB.north);
+\end{tikzhebrew}

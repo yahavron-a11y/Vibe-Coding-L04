@@ -1,0 +1,88 @@
+\babel@toc {hebrew}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {chapter}{\numberline {1}תקציר מנהלים, רקע המכרז וחוזה ההקמה הלאומי}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}פתח דבר: הדמוקרטיה הדליברטיבית בעידן הלוחמה התודעתית}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}ניתוח הפער האסטרטגי: מבדיקת עובדות בדיעבד לחיסון פרואקטיבי}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}תפיסת ההפעלה המבצעית (\foreignlanguage {english}{CONOPS})}{2}{section.1.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {1.4}מטריצת עמידה בדרישות המכרז הבין-משרדי (\foreignlanguage {english}{RFP Compliance Matrix})}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}תרומת הפרויקט ומבנה הדוח המכין}{3}{section.1.5}%
+\contentsline {chapter}{\numberline {2}תשתית תיאורטית: תקשורת פוליטית, מדעי המדינה ולוחמת תודעה}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}מדוע מערכת AI לאומית חייבת להישען על תיאוריה פוליטית ותקשורתית?}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}תיאוריות הליבה בתקשורת פוליטית}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}תיאוריית קביעת סדר היום והתערבות בין-תקשורתית (Agenda Setting)}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}פרדיגמת המסגור הפוליטי של אנטמן (Entman Framing Paradigm)}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}ספירלת השתיקה, תיבות תהודה וקיטוב רגשי}{6}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}תיאוריית החיסון התודעתי (Inoculation Theory / Prebunking)}{6}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}נדבכים במדעי המדינה ובמחשבה החוקתית}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}המרחב הציבורי של הברמאס והאפיסטמולוגיה הדמוקרטית}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}עוצמה חדה (Sharp Power) בעידן הדיגיטלי}{7}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}דמוקרטיה מתגוננת (Militant / Defensive Democracy)}{7}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}מיפוי התיאוריות לארכיטקטורת CivicShield AI}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}סיכום הפרק והיגזר התכנוני}{7}{section.2.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {chapter}{\numberline {3}אפיון דרישות המערכת, בעלי עניין ותרחישי ייחוס מבצעיים}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}מיפוי בעלי העניין ומערכת האיזונים המוסדית}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}מפרט דרישות פונקציונליות (\foreignlanguage {english}{FR-01} עד \foreignlanguage {english}{FR-15})}{9}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}קבוצה א': קליטה, ניטור וזיהוי פורנזי (\foreignlanguage {english}{FR-01} עד \foreignlanguage {english}{FR-05})}{10}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}קבוצה ב': מידול תודעתי, קיטוב וחיזוי (\foreignlanguage {english}{FR-06} עד \foreignlanguage {english}{FR-10})}{10}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}קבוצה ג': חוקתיות, חיסון תודעתי והנגשה (\foreignlanguage {english}{FR-11} עד \foreignlanguage {english}{FR-15})}{11}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}דרישות לא-פונקציונליות (\foreignlanguage {english}{NFRs}) ומדדי סף הנדסיים}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.4}תרחישי ייחוס מבצעיים (\foreignlanguage {english}{Operational Use Cases})}{12}{section.3.4}%
+\contentsline {section}{\numberline {3.5}ניתוח כמותי: בלימת זליגת סדר היום והסטת המסגור (תוצאות סימולציה)}{12}{section.3.5}%
+\contentsline {chapter}{\numberline {4}ארכיטקטורת המערכת, תזמור רב-סוכנים וצינורות הנתונים}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}מדוע מודל שפה יחיד (\foreignlanguage {english}{Monolithic LLM}) נכשל במשימת הגנה לאומית?}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}ארכיטקטורת חמש השכבות של \foreignlanguage {english}{CivicShield AI}}{14}{section.4.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {4.3}תזמור צוות הסוכנים: \foreignlanguage {english}{Hub, Inbox, TODO Board} ולולאת \foreignlanguage {english}{ReAct}}{15}{section.4.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {subsection}{\numberline {4.3.1}חלוקת התפקידים בין הסוכנים והאינטראקציה בלולאת \foreignlanguage {english}{ReAct}}{16}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}מפרט פרוטוקול התקשורת הבין-סוכני (\foreignlanguage {english}{Hub JSON Envelope})}{16}{section.4.4}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {4.5}תקציב השהיה (\foreignlanguage {english}{Latency Budget}) במערכות שכבות}{17}{section.4.5}%
+\contentsline {chapter}{\numberline {5}מודלים מתמטיים, אלגוריתמיקה וסימולציות כמותיות ב-Python}{18}{chapter.5}%
+\contentsline {section}{\numberline {5.1}מתודולוגיית המידול: מאפידמיולוגיה תודעתית ועד תורת התורים}{18}{section.5.1}%
+\contentsline {section}{\numberline {5.2}מודל 1: דינמיקת הדבקה תודעתית וחיסון מוקדם (SIRI ODEs)}{18}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}ניסוח המשוואות הדיפרנציאליות}{18}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}גזירת סף ההתפרצות ($R_0$) ושיעור החיסון הקריטי ($p_c$)}{18}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}מודל 2: דינמיקת קיטוב תחומת-אמון וגישור פלורליסטי}{19}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}מודל Hegselmann-Krause והרחבת הדחייה החוץ-קבוצתית}{19}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}פרוטוקול הגישור הדליברטיבי של CivicShield (שמירת הפלורליזם)}{19}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}מודל 3: איחוד ראיות בייסיאני לזיהוי Deepfake ובעיית שיעור הבסיס}{20}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}אינטגרציה הסתברותית על פני ארבע מודאליות}{20}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}ניתוח עקומות ROC ו-Precision-Recall בתנאי אי-איזון קיצוני}{20}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}מודל 4: תכנון קיבולת והשהיה לפי מודל תורים M/M/c (Erlang-C)}{21}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}פיתוח נוסחת התור ותכנון צבר מאיצי GPU}{21}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}בחירת תצורת יום הבחירות ואלסטיות דינמית}{21}{subsection.5.5.2}%
+\contentsline {chapter}{\numberline {6}משפט חוקתי, דמוקרטיה מתגוננת, אתיקה והגנת הפרטיות}{23}{chapter.6}%
+\contentsline {section}{\numberline {6.1}הדילמה החוקתית: בין הגנת הדמוקרטיה לשימור חופש הביטוי הפוליטי}{23}{section.6.1}%
+\contentsline {section}{\numberline {6.2}עץ ההחלטות החוקתי בשכבה 4 (Constitutional Guardrail Engine)}{23}{section.6.2}%
+\contentsline {section}{\numberline {6.3}מנגנון החתימה הקריפטוגרפית המשולשת (Triple-Key Quorum)}{23}{section.6.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {6.4}הגנת הפרטיות המתמטית: פרטיות דיפרנציאלית ($\epsilon $-DP) ומחיקה אוטומטית}{24}{section.6.4}%
+\contentsline {section}{\numberline {6.5}מבדקי הגינות אלגוריתמית וסינתזה עם הרגולציה הבינלאומית}{25}{section.6.5}%
+\contentsline {chapter}{\numberline {7}ניהול סיכונים, תוכנית עבודה הנדסית, תקציב ומדדי הצלחה}{26}{chapter.7}%
+\contentsline {section}{\numberline {7.1}ניהול סיכונים אסטרטגיים, טכנולוגיים וחוקתיים}{26}{section.7.1}%
+\contentsline {section}{\numberline {7.2}תוכנית עבודה הנדסית רב-שלבית ל-24 חודשים (Roadmap)}{26}{section.7.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {7.3}תקציב חמש-שנתי, כלכלת טוקנים ותשואה מוסדית (ROI)}{27}{section.7.3}%
+\contentsline {section}{\numberline {7.4}מדדי הצלחה מחייבים ורמת שירות (SLA / KPI Framework)}{28}{section.7.4}%
+\contentsline {chapter}{\numberline {8}מתודולוגיית הפיתוח: ועדת המומחים של הסוכנים וביקורת איכות}{29}{chapter.8}%
+\contentsline {section}{\numberline {8.1}יישום מתודולוגיית שיעור 4 להפקת דוח מכין רב-תחומי}{29}{section.8.1}%
+\contentsline {section}{\numberline {8.2}תצורת צוות הסוכנים ומנגנון בקרת איכות (\texttt {team.json} ו-\texttt {AGY.md})}{29}{section.8.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {8.3}תיעוד ממצאי הצוות האדום והתיקונים שבוצעו בדוח}{31}{section.8.3}%
+\contentsline {section}{\numberline {8.4}סיכום הדוח המכין ומעבר לשלב היישום (Handover)}{31}{section.8.4}%
+\contentsline {chapter}{ביבליוגרפיה ומקורות מדעיים והנדסיים}{32}{chapter*.33}%
+\contentsfinish 

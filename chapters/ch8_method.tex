@@ -1,0 +1,86 @@
+% ============================================================================
+% Chapter 8: Development Methodology, Multi-Agent Committee & Red Team QA
+% ============================================================================
+\chapter{מתודולוגיית הפיתוח: ועדת המומחים של הסוכנים וביקורת איכות}
+\label{ch:methodology}
+
+\section{יישום מתודולוגיית שיעור 4 להפקת דוח מכין רב-תחומי}
+\label{sec:lesson4-methodology}
+
+מעבר להיותו של פרויקט CivicShield AI תכנון למערכת רב-סוכנית, תהליך הכתיבה, המידול, הסימולציה וההידור של דוח מכין זה עצמו בוצע במודל \textbf{ועדת מומחים מבוזרת של סוכני קוד ומחקר} (Multi-Agent Engineering Committee), ברוח עקרונות שיעור 4 בקורס (``תזמור רב-סוכנים עם סוכני קידוד'')~\cite{segal2026}.
+
+במקום לבקש מסוכן יחיד לכתוב ברצף עשרות עמודים בעולמות תוכן זרים זה לזה (משפט חוקתי, אפידמיולוגיה מתמטית, סוציולוגיה של התקשורת ועיצוב LuaLaTeX), פוצל הפרויקט ללוח משימות מובנה (\texttt{team.json}) ו-5 קובצי הנחיית תפקיד (\texttt{agents/*/AGY.md}), שבו כל סוכן מחזיק בזהות אפיסטמית, כלים ייעודיים וסמכות בקרה הדדית:
+
+\begin{itemize}
+    \item \textbf{Master Orchestrator (\texttt{agents/master/AGY.md}):} אחראי על ניהול מסמך הדרישות (\texttt{PRD.md}), תוכנית הביצוע (\texttt{PLAN.md}), עקביות המספור בין פרקים ואיחוד השכבות לכדי קובץ \texttt{main.tex} אחיד.
+    \item \textbf{Political \& Communication Theory Agent (\texttt{agents/theory/AGY.md}):} מתמחה בספרות התקשורת הפוליטית ומדעי המדינה, אחראי על פרקים 2 ו-6 ועל המיפוי ל-26 המקורות הביבליוגרפיים.
+    \item \textbf{System \& Security Architect Agent (\texttt{agents/architect/AGY.md}):} מתמחה בארכיטקטורת מערכות, סכימת העברת ההודעות (Hub JSON), פרוטוקולי קריפטוגרפיה ותכנון תרשימי ה-TikZ.
+    \item \textbf{Quantitative Simulator Agent (\texttt{agents/simulator/AGY.md}):} פועל בסביבת Python 3 / \texttt{uv}, כותב ומריץ סימולציות דטרמיניסטיות ב-\texttt{numpy} ו-\texttt{matplotlib} להפקת ששת הגרפים המדעיים ומזין את התוצאות המאומתות לפרקים 3, 5 ו-7.
+    \item \textbf{Red Team \& RTL Audit Agent (\texttt{agents/redteam/AGY.md}):} סוכן לעומתי שתפקידו לתקוף הנחות מוצא אידאולוגיות או הנדסיות, לוודא היעדר צנזורה אוטומטית ולאמת את שלמות הקימפול הדו-כיווני ב-LuaLaTeX.
+\end{itemize}
+
+איור~\ref{fig:workflow} מציג את תרשים הזרימה של ועדת המומחים, כולל שערי החזרה לתיקון (Rejection Feedback Loop) כאשר הצוות האדום מזהה פגם מתמטי, משפטי או טיפוגרפי.
+
+\section{תצורת צוות הסוכנים ומנגנון בקרת איכות (\texttt{team.json} ו-\texttt{AGY.md})}
+\label{sec:team-config}
+
+בהתאמה למבנה הפרויקט בסביבת Antigravity, מוגדרת המערכת ברמת תיקיית השורש על ידי הקובץ \texttt{team.json} והקובץ \texttt{AGY.md}, ומתפצלת לחמש תת-תיקיות סוכנים. מבנה זה מאפשר הרצה מחזורית שבה ניתן להחליף או לשדרג סוכן בודד (למשל הרצת תרחישי קיטוב חדשים אצל סוכן ה-Simulator) מבלי לשבור את ניסוח הפרקים המשפטיים או התיאורטיים. טבלה~\ref{tab:agent-committee} מרכזת את חלוקת הבעלות הקובצית בוועדה.
+
+\begin{figure}[htbp]
+    \centering
+    \input{figures/fig_workflow}
+    \caption{זרימת הפקת הדוח המכין באמצעות ועדת חמשת הסוכנים ומעגל התיקונים של הצוות האדום}
+    \label{fig:workflow}
+\end{figure}
+
+\begin{table}[htbp]
+    \centering
+    \caption{סגל ועדת הסוכנים המבצעית של פרויקט CivicShield AI וחלוקת הבעלות בקבצים}
+    \label{tab:agent-committee}
+    \begin{tabular}{|p{2.2cm}|p{3.8cm}|p{3.6cm}|p{4.6cm}|}
+        \hline
+        \textbf{מזהה סוכן} & \textbf{קובץ הנחיות תפקיד} & \textbf{תוצרים בבעלותו} & \textbf{סמכות בקרה מיוחדת} \\
+        \hline
+        \texttt{master} & \texttt{agents/master/AGY.md} & \texttt{PRD.md}, \texttt{PLAN.md}, \texttt{main.tex} & תזמור לוח משימות והכרעה בעמידה ביעדי אורך ומסירה. \\
+        \hline
+        \texttt{theory} & \texttt{agents/theory/AGY.md} & פרקים 2, 6 + ביבליוגרפיה & וידוא עקביות תיאורטית ודיוק משפט חוקתי ופרטיות. \\
+        \hline
+        \texttt{architect} & \texttt{agents/architect/AGY.md} & פרקים 1, 3, 4, \texttt{civicshield.cls} & פיקוח על הפרדת שכבות, תרשימי TikZ וסכמת Hub. \\
+        \hline
+        \texttt{simulator} & \texttt{agents/simulator/AGY.md} & \texttt{generate\_figures.py}, פרקים 5, 7 & וידוא כי כל מספר בדוח נגזר מהרצה מאומתת של הקוד. \\
+        \hline
+        \texttt{redteam} & \texttt{agents/redteam/AGY.md} & \texttt{verify\_report.py}, פרק 8 & זכות חסימת מסירה במקרה של פגיעה בזכויות או כשל LaTeX. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{תיעוד ממצאי הצוות האדום והתיקונים שבוצעו בדוח}
+\label{sec:redteam-audit}
+
+יעילותה של גישת Multi-Agent נמדדת ביכולתה לזהות שגיאות עוד בשלב התכנון המוקדם. במהלך הכנת מהדורה~1.0 של הדוח המכין, סיפק סוכן ה-Red Team ארבע ביקורות משמעותיות שתוקנו באופן מלא טרם האישור הסופי (טבלה~\ref{tab:redteam-audit}).
+
+\begin{table}[htbp]
+    \centering
+    \caption{יומן ממצאי ביקורת הצוות האדום (Red Team Audit) והתיקונים ההנדסיים שבוצעו}
+    \label{tab:redteam-audit}
+    \begin{tabular}{|p{1.5cm}|p{3.8cm}|p{3.4cm}|p{5.5cm}|}
+        \hline
+        \textbf{ממצא} & \textbf{תיאור הכשל בטיוטה} & \textbf{סיכון מזוהה} & \textbf{תיקון שהוטמע בגרסה הסופית} \\
+        \hline
+        \textbf{RT-01} & גישור קיטוב שדחס את כל הדעות לאחדות (Uniform Consensus) & חשש מהנדסת דעות אנטי-פלורליסטית & הוספת עוגן אותנטיות $0.28\,x_i(0)$ למשוואה~5.8, המשמר גיוון דמוקרטי מלא. \\
+        \hline
+        \textbf{RT-02} & היתר עקיף לסוכן להמליץ על הסרה בלעדית ללא ערכאה & מדרון חלקלק לצנזורה בידי הרשות המבצעת & הוספת מפתח שלישי (אופוזיציה/ציבור) ב-3-of-3 Ed25519 Quorum ועץ חוקה קשיח. \\
+        \hline
+        \textbf{RT-03} & גלישת טקסט וסימני כיוון RTL בקופסאות ובאיורי TikZ & פגיעה בקריאות שער המכרז ובמשוואות & פיתוח המעטפות \texttt{\textbackslash NewEnviron} ו-\texttt{tikzhebrew} במחלקה \texttt{civicshield.cls} לאיטום כיווניות. \\
+        \hline
+        \textbf{RT-04} & התאמה חלקית בגרפים (\texttt{fig1}, \texttt{fig5}) ופער בהצלבת תגים & חוסר מיקוד ויזואלי או תווי הגהה & כיול גרפי שיא ו-Erlang-C בקובץ הפייתון ובניית סקריפט \texttt{verify\_report.py} לווידוא אוטומטי. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{סיכום הדוח המכין ומעבר לשלב היישום (Handover)}
+\label{sec:handover}
+
+דוח מכין זה הציג מענה שלם, רב-תחומי ומגובה כמותית לאתגר המרכזי של הדמוקרטיה בעידן הבינה המלאכותית: כיצד להגן על הספרה הציבורית, סדר היום האזרחי וטוהר הבחירות מול מתקפות FIMI ו-Deepfakes --- מבלי להקריב את חופש הביטוי, הפלורליזם הדעות והפרטיות הפרטית.
+
+באמצעות חיבור של שבע תיאוריות מבוססות בתקשורת פוליטית ומדעי המדינה, ארכיטקטורה מבוזרת של 5 שכבות ותזמור רב-סוכני, ארבעה מודלים מתמטיים מוכחים בסימולציות Python והגנות חוקתיות קריפטוגרפיות, תשתית CivicShield AI בשלה למעבר מיידי משלב הדוח המכין אל שלב א' של ההקמה ההנדסית (Months 1--6). המערכת מדגימה הלכה למעשה כיצד בינה מלאכותית מתוזמרת היטב אינה מאיימת על מוסדות הדמוקרטיה --- אלא משמשת חומת מגן שנועדה לשמר אותם שקופים, פתוחים וחסונים לדורות הבאים.
