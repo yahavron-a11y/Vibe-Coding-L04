@@ -1,0 +1,44 @@
+% !TEX TS-program = lualatex
+\documentclass{pdr_hebrew}
+
+% Compatibility helpers for all peer sections
+\providecommand{\textenglish}[1]{\foreignlanguage{english}{#1}}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{url}
+
+\title{\textbf{דוח תכנון ראשוני (\en{Preliminary Design Report})} \\
+\large מערכת רב-סוכנים לניתוח, תכנון ובקרה של מרחב מידע דמוקרטי}
+\author{צוות הסוכנים: \en{master, theory, architect, simulator, redteam}}
+\date{נובמבר 2026}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+
+% 1. Theory: Political Communication, Political Science & Constitutional Law
+\input{theory_sections}
+\newpage
+
+% 2. Architect: 5-Layer Architecture, Multi-Agent Hub Spec, FR/NFRs & TikZ Diagrams
+\input{sec_architecture}
+\newpage
+
+% 3. Simulator: SIRI ODEs, Hegselmann-Krause Opinions, Bayesian Fusion, M/M/c Queueing & 5Y ROI
+\input{simulator_sections}
+\newpage
+
+% 4. Redteam: Constitutional Safeguards Audit, Anti-Censorship Review & LuaLaTeX BiDi QA
+\input{redteam_sections}
+\newpage
+
+% 5. Bibliography
+\begin{otherlanguage}{english}
+\bibliographystyle{unsrt}
+\bibliography{references}
+\end{otherlanguage}
+
+\end{document}

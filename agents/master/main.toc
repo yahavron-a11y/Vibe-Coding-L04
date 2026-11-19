@@ -1,0 +1,101 @@
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {1}מסגרת תאורטית: תקשורת פוליטית בעידן הבינה המלאכותית}{\babelsublr {5}}{section.1}%
+\contentsline {subsection}{\numberline {1.1}המרחב הציבורי הדיגיטלי, דמוקרטיה דיונית ותיווך אלגוריתמי}{\babelsublr {5}}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}מודלים קלאסיים של השפעות תקשורת והתמרתם במערכות בינה מלאכותית}{\babelsublr {5}}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}קביעת סדר יום (Agenda-Setting)}{\babelsublr {5}}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}מסגור (Framing)}{\babelsublr {5}}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}הטרמה (Priming)}{\babelsublr {5}}{subsubsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.3}תאי הד, בועות סינון וקיטוב רגשי}{\babelsublr {6}}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}בינה מלאכותית יוצרת, מבצעי השפעה וביטחון אפיסטמי}{\babelsublr {6}}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}חקרי מקרה בתקשורת פוליטית דיגיטלית}{\babelsublr {6}}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}השלכות תכנוניות למערכת מהיבט התקשורת הפוליטית}{\babelsublr {7}}{subsection.1.6}%
+\contentsline {section}{\numberline {2}מסגרת תאורטית: מדע המדינה, עיצוב מוסדי וסימולציה פוליטית}{\babelsublr {7}}{section.2}%
+\contentsline {subsection}{\numberline {2.1}תאוריה דמוקרטית, ייצוג ולגיטימציה}{\babelsublr {7}}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}עיצוב מוסדי, פעולה קולקטיבית ואיזונים ובלמים}{\babelsublr {7}}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}שחיקה דמוקרטית, פופוליזם ושחיקת אמון במוסדות}{\babelsublr {8}}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}סימולציה מרובת-סוכנים של התנהגות פוליטית: הזדמנויות ומגבלות}{\babelsublr {8}}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}חקרי מקרה במדע המדינה ובעיצוב מוסדי דיגיטלי}{\babelsublr {9}}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}השלכות תכנוניות למערכת מהיבט מדע המדינה}{\babelsublr {9}}{subsection.2.6}%
+\contentsline {section}{\numberline {3}מסגרת נורמטיבית: משפט חוקתי השוואתי ורגולציה של בינה מלאכותית}{\babelsublr {9}}{section.3}%
+\contentsline {subsection}{\numberline {3.1}יסודות חוקתיים: חופש הביטוי, כבוד האדם ומידתיות}{\babelsublr {9}}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}ניתוח חוקתי השוואתי: ישראל, האיחוד האירופי וארצות הברית}{\babelsublr {9}}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}המשפט החוקתי הישראלי: חוקי היסוד, הלכת קול העם ופסקת ההגבלה}{\babelsublr {10}}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}המשפט האירופי: חוק הבינה המלאכותית (EU AI Act) וחוק השירותים הדיגיטליים (DSA)}{\babelsublr {10}}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}המשפט החוקתי האמריקאי: התיקון הראשון לחוקה והלכת NetChoice}{\babelsublr {10}}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}הליך הוגן טכנולוגי, שקיפות אלגוריתמית ואיסור הפליה}{\babelsublr {10}}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}סינתזה הנדסית-נורמטיבית: תרגום דרישות תאורטיות וחוקתיות לארכיטקטורת המערכת}{\babelsublr {11}}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}סיכום הפרק התאורטי-נורמטיבי}{\babelsublr {11}}{subsection.3.5}%
+\contentsline {section}{\numberline {4}ארכיטקטורת מערכת בת 5 שכבות (\foreignlanguage {english}{5-Layer System Architecture})}{\babelsublr {12}}{section.4}%
+\contentsline {subsection}{\numberline {4.1}עקרונות תכנון מובילים (\foreignlanguage {english}{Core Architectural Principles})}{\babelsublr {12}}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}מפרט מפורט של חמש השכבות (\foreignlanguage {english}{Detailed 5-Layer Component Specifications})}{\babelsublr {12}}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}שכבה 5: שכבת הממשק, הקלט והבקרה (\foreignlanguage {english}{Presentation, CLI \& Governance Layer})}{\babelsublr {13}}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}שכבה 4: שכבת התזמור והרכזת הרב-סוכנית (\foreignlanguage {english}{Multi-Agent Hub \& Orchestration Layer})}{\babelsublr {13}}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}שכבה 3: שכבת הסוכנים המתמחים והעיבוד הקוגניטיבי (\foreignlanguage {english}{Specialized Agents \& Cognitive Layer})}{\babelsublr {13}}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}שכבה 2: שכבת הכלים, הסימולציה והביצוע (\foreignlanguage {english}{Tooling, Execution \& Sandbox Layer})}{\babelsublr {13}}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.5}שכבה 1: שכבת הנתונים, הזיכרון וההתמדה (\foreignlanguage {english}{Persistence, State \& Observability Layer})}{\babelsublr {14}}{subsubsection.4.2.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {subsection}{\numberline {4.3}טופולוגיית פריסה וסביבת ריצה (\foreignlanguage {english}{Deployment \& Runtime Topology})}{\babelsublr {14}}{subsection.4.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {5}מפרט רכזת הסוכנים, פרוטוקולים וחוזי \foreignlanguage {english}{API} (\foreignlanguage {english}{Multi-Agent Hub Spec})}{\babelsublr {15}}{section.5}%
+\contentsline {subsection}{\numberline {5.1}סכמת מעטפת ההודעה (\foreignlanguage {english}{Message Envelope Schema})}{\babelsublr {15}}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}חוזי ממשק \foreignlanguage {english}{CLI / API} של הרכזת (\foreignlanguage {english}{Hub API Contracts})}{\babelsublr {15}}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}טופולוגיית תקשורת, תרשים רצף ומכונת מצבים}{\babelsublr {16}}{subsection.5.3}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 
+\contentsline {section}{\numberline {6}מודלי נתונים וארכיטקטורת התמדה (\foreignlanguage {english}{Data Models \& Persistence})}{\babelsublr {17}}{section.6}%
+\contentsline {section}{\numberline {7}דרישות פונקציונליות מפורטות (\foreignlanguage {english}{Functional Requirements: FR-01 to FR-20})}{\babelsublr {18}}{section.7}%
+\contentsline {section}{\numberline {8}דרישות לא-פונקציונליות (\foreignlanguage {english}{Non-Functional Requirements: NFR-01 to NFR-15})}{\babelsublr {19}}{section.8}%
+\contentsline {section}{\numberline {9}ניתוח מצבי כשל והתאוששות (\foreignlanguage {english}{Failure Modes, FMEA \& Recovery})}{\babelsublr {20}}{section.9}%
+\contentsline {section}{\numberline {10}ארכיטקטורת אבטחה, בידוד וממשל (\foreignlanguage {english}{Security \& Governance Architecture})}{\babelsublr {20}}{section.10}%
+\contentsline {section}{\numberline {11}מידול מתמטי, סימולציה כמותית וניתוח כלכלי רב-שנתי}{\babelsublr {22}}{section.11}%
+\contentsline {subsection}{\numberline {11.1}מודל \foreignlanguage {english}{SIRI} להתפשטות דיסאינפורמציה והדבקה חוזרת}{\babelsublr {22}}{subsection.11.1}%
+\contentsline {subsubsection}{\numberline {11.1.1}ניסוח מתמטי ופיתוח המשוואות}{\babelsublr {22}}{subsubsection.11.1.1}%
+\contentsline {subsubsection}{\numberline {11.1.2}נקודות שיווי משקל, יציבות ומספר ההתרבות}{\babelsublr {22}}{subsubsection.11.1.2}%
+\contentsline {subsubsection}{\numberline {11.1.3}סכמת אינטגרציה נומרית וניתוח רגישות פרמטרים}{\babelsublr {23}}{subsubsection.11.1.3}%
+\contentsline {subsection}{\numberline {11.2}דינמיקת דעות מוגבלת-ביטחון: מודל \foreignlanguage {english}{Hegselmann--Krause}}{\babelsublr {24}}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}ניסוח המודל המשוקלל עם סוכנים עיקשים ומאמתים}{\babelsublr {24}}{subsubsection.11.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.2}תכונות התכנסות ומדד הקיטוב}{\babelsublr {24}}{subsubsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.3}היתוך ראיות בייסיאני רב-מקורי וכיול אמינות}{\babelsublr {24}}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}פיתוח נוסחת ההיתוך במרחב יחס הסיכויים הלוגריתמי}{\babelsublr {26}}{subsubsection.11.3.1}%
+\contentsline {subsubsection}{\numberline {11.3.2}עדכון צמוד \foreignlanguage {english}{Beta--Binomial} ומדדי כיול}{\babelsublr {26}}{subsubsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.4}מודל תורים \foreignlanguage {english}{M/M/c}, נוסחת \foreignlanguage {english}{Erlang-C} וחסמי \foreignlanguage {english}{SLA}}{\babelsublr {26}}{subsection.11.4}%
+\contentsline {subsubsection}{\numberline {11.4.1}פיתוח תהליך לידה-מוות ונוסחת \foreignlanguage {english}{Erlang-C}}{\babelsublr {26}}{subsubsection.11.4.1}%
+\contentsline {subsubsection}{\numberline {11.4.2}כיול צוות האנליסטים וניתוח עמידה ב-\foreignlanguage {english}{SLA}}{\babelsublr {27}}{subsubsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.5}השוואת תרחישים בסימולציית מונטה-קרלו משולבת}{\babelsublr {27}}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}מודל פיננסי לחמש שנים: \foreignlanguage {english}{TCO, ROI, NPV, IRR} וניתוח רגישות}{\babelsublr {28}}{subsection.11.6}%
+\contentsline {subsubsection}{\numberline {11.6.1}פירוט עלות בעלות כוללת (\foreignlanguage {english}{TCO}) ומודל תועלות}{\babelsublr {28}}{subsubsection.11.6.1}%
+\contentsline {subsubsection}{\numberline {11.6.2}ניתוח רגישות פיננסי דו-ממדי}{\babelsublr {29}}{subsubsection.11.6.2}%
+\contentsline {section}{\numberline {12}ביקורת מנגנוני הגנה חוקתיים (\foreignlanguage {english}{Constitutional Safeguards Audit})}{\babelsublr {30}}{section.12}%
+\contentsline {subsection}{\numberline {12.1}עקרונות יסוד חוקתיים במערכת מרובת-סוכנים}{\babelsublr {30}}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}ארכיטקטורת אכיפה רב-שכבתית (\foreignlanguage {english}{Defense-in-Depth})}{\babelsublr {31}}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}מטריצת ביקורת למנגנוני הגנה חוקתיים}{\babelsublr {31}}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}דרישות סף למעבר לשלב התכנון המפורט (\foreignlanguage {english}{CDR Gate Criteria})}{\babelsublr {31}}{subsection.12.4}%
+\contentsline {section}{\numberline {13}מידול איומים יריבי למערכות בינה מלאכותית פוליטית (\foreignlanguage {english}{STRIDE \& MITRE ATLAS})}{\babelsublr {32}}{section.13}%
+\contentsline {subsection}{\numberline {13.1}ניתוח משטח התקיפה (\foreignlanguage {english}{Attack Surface Analysis})}{\babelsublr {32}}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}מיפוי איומים לפי \foreignlanguage {english}{STRIDE} ו-\foreignlanguage {english}{MITRE ATLAS}}{\babelsublr {32}}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}איומי \foreignlanguage {english}{BiDi Spoofing} והזרקת קוד ב-\foreignlanguage {english}{LaTeX}}{\babelsublr {33}}{subsection.13.3}%
+\contentsline {section}{\numberline {14}תרחישי תקיפת צוות אדום ומנגנוני הפחתת סיכונים (\foreignlanguage {english}{Red-Team Scenarios})}{\babelsublr {33}}{section.14}%
+\contentsline {subsection}{\numberline {14.1}פירוט תרחישי התקיפה המרכזיים}{\babelsublr {33}}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}מטריצת תרחישי \foreignlanguage {english}{Red-Team} וקריטריוני הצלחה}{\babelsublr {34}}{subsection.14.2}%
+\contentsline {section}{\numberline {15}סקירת מניעת צנזורה ומבחני עומס לניטרליות עמדות (\foreignlanguage {english}{Anti-Censorship \& Neutrality})}{\babelsublr {34}}{section.15}%
+\contentsline {subsection}{\numberline {15.1}הבחנה בין מניעת נזק לגיטימית לצנזורה מיותרת}{\babelsublr {35}}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}עקרונות הליבה למניעת צנזורה והטיה}{\babelsublr {35}}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}מתודולוגיית מבחני עומס לניטרליות עמדות (\foreignlanguage {english}{Stress Testing})}{\babelsublr {35}}{subsection.15.3}%
+\contentsline {subsection}{\numberline {15.4}מדדי הערכה כמותיים (\foreignlanguage {english}{KPIs}) וקטגוריות מבחני עומס}{\babelsublr {35}}{subsection.15.4}%
+\contentsline {section}{\numberline {16}מסגרת ממשל, פיקוח ואחריותיות (\foreignlanguage {english}{Governance \& Oversight Framework})}{\babelsublr {35}}{section.16}%
+\contentsline {subsection}{\numberline {16.1}מודל שלושת קווי ההגנה (\foreignlanguage {english}{Three Lines of Defense})}{\babelsublr {37}}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}פרוטוקול מדרגות הסלמה ומצב פעולה בטוח (\foreignlanguage {english}{Safe Fallback})}{\babelsublr {37}}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.3}מטריצת אחריות (\foreignlanguage {english}{RACI}) לניהול אירועי בטיחות וביקורת}{\babelsublr {37}}{subsection.16.3}%
+\contentsline {section}{\numberline {17}פרוטוקול בקרת איכות ואימות ל-\foreignlanguage {english}{LuaLaTeX} דו-כיווני בסביבת \foreignlanguage {english}{MiKTeX}}{\babelsublr {37}}{section.17}%
+\contentsline {subsection}{\numberline {17.1}ארכיטקטורת הידור תקנית ל-\foreignlanguage {english}{MiKTeX + LuaLaTeX}}{\babelsublr {38}}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}כללי \foreignlanguage {english}{BiDi} מחייבים לפי רכיבי מסמך}{\babelsublr {38}}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}רשימת תיוג מורחבת לבקרת איכות (\foreignlanguage {english}{BiDi QA Checklist})}{\babelsublr {38}}{subsection.17.3}%
+\contentsline {subsection}{\numberline {17.4}פרוטוקול אימות אוטומטי ליומן ההידור (\foreignlanguage {english}{.log Verification})}{\babelsublr {38}}{subsection.17.4}%
+\babel@toc {english}{}\relax 
+\babel@toc {hebrew}{}\relax 

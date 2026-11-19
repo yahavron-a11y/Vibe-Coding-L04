@@ -1,0 +1,525 @@
+% !TEX TS-program = lualatex
+% sec_architecture.tex - Expanded Architect Sections for Preliminary Design Report (PDR)
+% Target: 10+ full pages of rich Hebrew engineering content, fully compatible with pdr_hebrew.cls (LuaLaTeX BiDi)
+
+% ==============================================================================
+\section{ארכיטקטורת מערכת בת 5 שכבות (\en{5-Layer System Architecture})}
+\label{sec:5layer-arch}
+% ==============================================================================
+
+המערכת הרב-סוכנית מתוכננת בארכיטקטורה מודולרית בת חמש שכבות מבודדות (\en{Decoupled 5-Layer Architecture}), המבוססת על עקרונות הפרדת אחריות (\en{Separation of Concerns}), היפוך תלויות (\en{Dependency Inversion}), ובידוד כשלים (\en{Fault Isolation}). כל שכבה מוגדרת באמצעות חוזה ממשק קשיח (\en{Strict Interface Contract}) מול השכבות הסמוכות לה בלבד, ללא עקיפה ישירה בין שכבות שאינן סמוכות. מבנה זה מאפשר שדרוג עצמאי של מודלי השפה, הוספת סוכנים מתמחים חדשים, החלפת מנוע ההרצה או מנגנון ההתמדה, ואימות פורמלי של כל שכבה בנפרד.
+
+\subsection{עקרונות תכנון מובילים (\en{Core Architectural Principles})}
+\begin{itemize}[leftmargin=1.2cm]
+  \item \textbf{דטרמיניזם תפעולי (\en{Operational Determinism}):} על אף שמודלי השפה בשכבה הקוגניטיבית הם סטוכסטיים, כל מנגנון הניתוב, הנעילה, ניהול התורים והעברת הקבצים בשכבת הרכזת הוא דטרמיניסטי לחלוטין וניתן לשחזור מלא מתוך יומני המערכת.
+  \item \textbf{תקשורת אסינכרונית מבוססת-תור (\en{Asynchronous Queue-Based Messaging}):} סוכנים אינם מתקשרים ישירות זה עם זה (\en{No Direct Peer-to-Peer Coupling}), אלא אך ורק דרך רכזת הסוכנים (\en{Mesh Hub}), מה שמאפשר בקרת עומסים, תיעוד מרכזי וניתוב מחדש במקרה של כשל.
+  \item \textbf{בידוד סביבות עבודה (\en{Workspace Sandboxing}):} לכל סוכן מוקצית תיקיית עבודה ייעודית; כל פעולת כתיבה או קריאה מוגבלת לגבולות ההרשאה שהוגדרו לו.
+  \item \textbf{קידוד דו-כיווני מובנה (\en{Native BiDi UTF-8 Pipeline}):} כלל התוצרים הטקסטואליים עוברים בקידוד \code{UTF-8} מלא באמצעות קבצים (\code{answer.md}, \code{.tex}, \code{.cls}), תוך הפרדה בין פלט בקרה אנגלי בטרמינל לבין תוכן הנדסי עשיר בעברית וב-\en{LaTeX}.
+\end{itemize}
+
+\subsection{מפרט מפורט של חמש השכבות (\en{Detailed 5-Layer Component Specifications})}
+
+\subsubsection{שכבה 5: שכבת הממשק, הקלט והבקרה (\en{Presentation, CLI \& Governance Layer})}
+שכבה זו מהווה את חזית המערכת מול המשתמשים, המפעילים ומערכות חיצוניות. היא אחראית על קליטת משימות-על, אכיפת מדיניות בטיחות (\en{Policy Guardrails}), תצוגת סטטוס בזמן אמת, והפקת תוצרי דוח סופיים.
+\begin{itemize}[leftmargin=1.2cm]
+  \item \textbf{ממשק שורת פקודה (\en{Master CLI Gateway}):} מאפשר למפעיל להזרים משימות אל \code{master}, להריץ בדיקות קישוריות (\code{meshcheck}), ולנהל את לוח המשימות המשותף.
+  \item \textbf{מנוע אכיפת מדיניות (\en{Governance \& Guardrail Engine}):} מאמת שכל בקשה עומדת בכללי האבטחה, מסנן תוכן זדוני או חריגות הרשאה, ואוכף כללי שפה ותצוגה בטרמינל.
+  \item \textbf{צינור הידור ותצוגה (\en{LaTeX/PDF Publishing Pipeline}):} מאגד את קובצי ה-\code{.tex} וה-\code{.cls} מכלל הסוכנים, מפעיל הידור דו-שלבי ב-\code{LuaLaTeX} תחת \en{MiKTeX}, ומוודא אפס שגיאות טיפוגרפיות, קישורים שבורים או חריגות שוליים.
+\end{itemize}
+
+\subsubsection{שכבה 4: שכבת התזמור והרכזת הרב-סוכנית (\en{Multi-Agent Hub \& Orchestration Layer})}
+זוהי ליבת התקשורת והתיאום של המערכת, הממומשת באמצעות שרת רכזת מקומי ולקוח \code{agymesh.exe}.
+\begin{itemize}[leftmargin=1.2cm]
+  \item \textbf{מנהל רישום ונוכחות (\en{Agent Registry \& Presence Manager}):} מתחזק טבלה חיה של סוכנים מחוברים, חותמות זמן של פעימות לב (\en{Heartbeat}), ומזהי תהליכים (\code{PID}).
+  \item \textbf{מתווך הודעות אסינכרוני (\en{Asynchronous Message Broker}):} מנהל תור \en{FIFO} נפרד לכל סוכן, תומך בהאזנה חוסמת (\en{Long-Polling}) עם פסק זמן מוגדר (240 שניות), ומבטיח מסירה אמינה עם מזהה קישור (\code{Correlation ID}).
+  \item \textbf{מנהל לוח משימות משותף (\en{Shared TODO Board Coordinator}):} מספק תור משימות מרכזי עם מנגנון נעילה אטומי (\code{todo-claim}) המונע תנאי מרוץ (\en{Race Conditions}) בין סוכנים המתחרים על משימות פתוחות.
+\end{itemize}
+
+\subsubsection{שכבה 3: שכבת הסוכנים המתמחים והעיבוד הקוגניטיבי (\en{Specialized Agents \& Cognitive Layer})}
+שכבה זו מאגדת את כלל הסוכנים האוטונומיים הפועלים במקביל, כאשר לכל סוכן תפקיד הנדסי מוגדר, הנחיית מערכת (\code{AGY.md}), והקשר שיחה עצמאי:
+\begin{itemize}[leftmargin=1.2cm]
+  \item \textbf{סוכן התזמור הראשי (\code{master}):} מפרק את יעד הדוח למשימות משנה, מחלק עבודה לסוכנים, מאמת עמידה ביעדי היקף ואיכות, ומבצע אינטגרציה סופית.
+  \item \textbf{סוכן הארכיטקטורה (\code{architect}):} אחראי על תכנון 5 השכבות, מפרט רכזת הסוכנים, דרישות \en{FR/NFR}, מחלקת \code{pdr\_hebrew.cls}, ותרשימי \en{TikZ} הנדסיים.
+  \item \textbf{סוכן התיאוריה (\code{theory}):} מנסח מודלים מתמטיים, הוכחות פורמליות, ניתוח סיבוכיות וחסמי התכנסות.
+  \item \textbf{סוכן הסימולציה (\code{simulator}):} מממש סימולציות כמותיות, אוסף מדדי שיהוי ותפוקה, ומייצר גרפים וטבלאות ניסוי.
+  \item \textbf{סוכן אבטחת המידע (\code{redteam}):} מבצע ניתוח איומים, בדיקות חדירה לוגיות, ואימות עמידות מול כשלים והתקפות.
+\end{itemize}
+
+\subsubsection{שכבה 2: שכבת הכלים, הסימולציה והביצוע (\en{Tooling, Execution \& Sandbox Layer})}
+שכבה זו מפרידה בין יכולת החשיבה של הסוכנים לבין ביצוע פעולות בעולם האמיתי (מערכת קבצים, תהליכים, מהדרים):
+\begin{itemize}[leftmargin=1.2cm]
+  \item \textbf{מעטפת מערכת קבצים מוגבלת (\en{Scoped File I/O Wrapper}):} מאפשרת קריאה וכתיבה מבוקרת של קובצי \code{.tex}, \code{.cls} ו-\code{answer.md} בתוך תיקיית הסוכן בלבד.
+  \item \textbf{מנוע הרצת פקודות (\en{Command Execution Sandbox}):} מריץ אך ורק פקודות מאושרות (\code{agymesh.exe}, \code{lualatex}, סקריפטי בדיקה) תחת פיקוח זמני ריצה (\en{Timeouts}) ואיסוף פלטים.
+  \item \textbf{מאמת תחביר וטיפוגרפיה (\en{LaTeX/BiDi Validator}):} בודק תקינות סביבות דו-כיווניות, עטיפת תרשימי \en{TikZ} ב-\code{ltrtikz}, ותאימות חבילות ב-\en{MiKTeX}.
+\end{itemize}
+
+\subsubsection{שכבה 1: שכבת הנתונים, הזיכרון וההתמדה (\en{Persistence, State \& Observability Layer})}
+שכבת התשתית התחתונה המבטיחה שרידות מידע, עקיבות מלאה ויכולת שחזור:
+\begin{itemize}[leftmargin=1.2cm]
+  \item \textbf{מאגר מצב הרכזת (\en{Hub State Store}):} שומר את מצב התורים, רשימת הסוכנים הפעילים ולוח המשימות המשותף באופן עמיד בפני הפסקת תהליך.
+  \item \textbf{מאגר תוצרים (\en{Artifact Repository}):} מנהל גרסאות של קובצי מקור (\code{.cls}, \code{.tex}), תשובות ביניים (\code{answer.md}), ותוצרי הידור סופיים (\code{.pdf}).
+  \item \textbf{יומני ביקורת וטלמטריה (\en{Audit Logs \& Telemetry Store}):} מתעד כל הודעה, חותמת זמן, שיהוי תגובה, ושגיאות מערכת לצורך ניטור וניתוח פוסט-מורטם.
+\end{itemize}
+
+\begin{figure}[H]
+\begin{ltrtikz}
+\begin{tikzpicture}[
+  node distance=0.45cm,
+  layer/.style={
+    rectangle, rounded corners=4pt,
+    minimum width=13.0cm, minimum height=1.25cm,
+    draw=pdrPrimary, line width=0.9pt,
+    align=center, font=\sffamily\small,
+    blur shadow={shadow blur steps=5}
+  },
+  biarr/.style={{Stealth[length=2.5mm,width=1.8mm]}-{Stealth[length=2.5mm,width=1.8mm]}, line width=0.9pt, draw=pdrSecondary}
+]
+  \node[layer, fill=pdrPrimary!12] (L1) {
+    \textbf{Layer 5: Presentation, CLI \& Governance}\\
+    \footnotesize Master CLI Gateway $\cdot$ Policy Guardrails $\cdot$ LuaLaTeX/PDF Publishing Pipeline
+  };
+  \node[layer, fill=pdrSecondary!14, below=of L1] (L2) {
+    \textbf{Layer 4: Multi-Agent Hub \& Orchestration}\\
+    \footnotesize Agent Registry $\cdot$ Async Message Broker (\texttt{wait}/\texttt{reply}) $\cdot$ Atomic TODO Board
+  };
+  \node[layer, fill=pdrAccent!14, below=of L2] (L3) {
+    \textbf{Layer 3: Specialized Agents \& Cognitive Processing}\\
+    \footnotesize \texttt{master} $\cdot$ \texttt{architect} $\cdot$ \texttt{theory} $\cdot$ \texttt{simulator} $\cdot$ \texttt{redteam}
+  };
+  \node[layer, fill=pdrLightBg, below=of L3] (L4) {
+    \textbf{Layer 2: Tooling, Execution \& Sandbox}\\
+    \footnotesize Scoped File I/O $\cdot$ Command Sandbox $\cdot$ LuaLaTeX/MiKTeX \& BiDi Validator
+  };
+  \node[layer, fill=pdrBorder!45, below=of L4] (L5) {
+    \textbf{Layer 1: Persistence, State \& Observability}\\
+    \footnotesize Hub State Store $\cdot$ Artifact Repository (\texttt{.tex}, \texttt{.cls}, \texttt{answer.md}) $\cdot$ Audit \& Telemetry
+  };
+
+  \draw[biarr] (L1.south) -- (L2.north);
+  \draw[biarr] (L2.south) -- (L3.north);
+  \draw[biarr] (L3.south) -- (L4.north);
+  \draw[biarr] (L4.south) -- (L5.north);
+
+  \node[rectangle, rounded corners=3pt, draw=pdrWarn, fill=pdrWarn!10,
+        minimum width=1.05cm, minimum height=7.8cm,
+        align=center, font=\sffamily\scriptsize\bfseries,
+        rotate=90, anchor=center] (OBS) at ($(L3.east)+(1.05,0)$) {
+    Cross-Cutting Security, Audit Logging \& Telemetry Bus
+  };
+\end{tikzpicture}
+\end{ltrtikz}
+\caption{תרשים ארכיטקטורת 5 השכבות של המערכת הרב-סוכנית}
+\label{fig:5layer-arch}
+\end{figure}
+
+\subsection{טופולוגיית פריסה וסביבת ריצה (\en{Deployment \& Runtime Topology})}
+המערכת פרוסה בסביבת תחנת עבודה מקומית (\en{Windows Host}) שבה כל סוכן רץ כתהליך \en{Antigravity CLI} עצמאי עם תיקיית עבודה מבודדת תחת שורש הפרויקט (\code{agents/<agent\_name>/}). הרכזת פועלת כשירות רקע מקומי המאזין על ערוץ תקשורת בין-תהליכי (\en{Localhost IPC/HTTP}), ללא חשיפה לרשת חיצונית.
+
+\begin{figure}[H]
+\begin{ltrtikz}
+\begin{tikzpicture}[
+  node distance=0.6cm and 0.8cm,
+  host/.style={rectangle, rounded corners=6pt, draw=pdrPrimary, dashed, line width=1pt, fill=pdrLightBg!50, inner sep=10pt},
+  proc/.style={rectangle, rounded corners=3pt, draw=pdrSecondary, line width=0.85pt, fill=white, minimum width=2.8cm, minimum height=0.95cm, align=center, font=\sffamily\scriptsize},
+  svc/.style={rectangle, rounded corners=4pt, draw=pdrAccent, line width=1pt, fill=pdrAccent!12, minimum width=3.4cm, minimum height=1.1cm, align=center, font=\sffamily\footnotesize\bfseries},
+  arr/.style={{Stealth[length=2mm]}-{Stealth[length=2mm]}, line width=0.8pt, draw=pdrPrimary}
+]
+  \node[svc] (hub) {AGY Mesh Hub Daemon\\ \scriptsize\normalfont Local IPC / Queue Engine};
+  \node[proc, above left=0.8cm and 1.2cm of hub] (p1) {\textbf{Process: master}\\ \texttt{agents/master/}};
+  \node[proc, above right=0.8cm and 1.2cm of hub] (p2) {\textbf{Process: architect}\\ \texttt{agents/architect/}};
+  \node[proc, below left=0.8cm and 1.2cm of hub] (p3) {\textbf{Process: theory/sim}\\ \texttt{agents/theory/}};
+  \node[proc, below right=0.8cm and 1.2cm of hub] (p4) {\textbf{Process: redteam}\\ \texttt{agents/redteam/}};
+
+  \node[proc, draw=pdrWarn, fill=pdrWarn!8, right=1.3cm of p2] (miktex) {\textbf{MiKTeX / LuaLaTeX}\\ \scriptsize PDF Compiler};
+
+  \draw[arr] (p1.south east) -- (hub.north west);
+  \draw[arr] (p2.south west) -- (hub.north east);
+  \draw[arr] (p3.north east) -- (hub.south west);
+  \draw[arr] (p4.north west) -- (hub.south east);
+  \draw[-{Stealth[length=2mm]}, line width=0.8pt, draw=pdrWarn] (p2.east) -- node[above, font=\tiny\ttfamily] {.cls/.tex} (miktex.west);
+
+  \begin{scope}[on background layer]
+    \node[host, fit=(hub)(p1)(p2)(p3)(p4)(miktex), label={[font=\sffamily\scriptsize\bfseries, text=pdrPrimary]above:Windows Local Host (Isolated Multi-Process Runtime)}] {};
+  \end{scope}
+\end{tikzpicture}
+\end{ltrtikz}
+\caption{טופולוגיית פריסה ובידוד תהליכים בסביבת הריצה המקומית}
+\label{fig:deployment-topo}
+\end{figure}
+
+% ==============================================================================
+\section{מפרט רכזת הסוכנים, פרוטוקולים וחוזי \en{API} (\en{Multi-Agent Hub Spec})}
+\label{sec:hub-spec}
+% ==============================================================================
+
+רכזת הסוכנים (\en{AGY Mesh Hub}) מספקת שכבת תעבורה אמינה, נטולת תלויות חיצוניות, המגשרת בין סוכנים עצמאיים בקבוצת \code{team}. הפרק שלהלן מפרט את מבנה ההודעה, חוזי ה-\en{CLI/API}, מכונת המצבים של סוכן, ותרשימי הרצף והטופולוגיה.
+
+\subsection{סכמת מעטפת ההודעה (\en{Message Envelope Schema})}
+כל הודעה הנשלחת דרך הרכזת עוברת סריאליזציה למבנה אחיד הכולל את השדות הבאים:
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.22}
+\begin{tabularx}{\textwidth}{|>{\bfseries\ttfamily}l|l|c|X|}
+\hline
+\rowcolor{pdrPrimary!15}
+\textbf{שדה} & \textbf{טיפוס} & \textbf{חובה} & \textbf{תיאור ואילוצי תקינות} \\
+\hline
+id & \en{String (Hex-12)} & כן & מזהה ייחודי גלובלי בן 12 תווים הקסדצימליים (למשל \code{416e4d63c4cf}), המשמש לקישור חד-חד-ערכי בין בקשה לתשובה. \\
+\hline
+kind & \en{Enum} & כן & סוג הפעולה: \code{ping}, \code{meshcheck}, \code{task}, או \code{reply}. \\
+\hline
+from & \en{String} & כן & שם הסוכן השולח כפי שנרשם ב-\code{join}, מלווה ב-\code{pid} של תהליך השולח. \\
+\hline
+to & \en{String} & כן & שם הסוכן היעד או \code{*} עבור שידור קבוצתי (\code{ping-all}). \\
+\hline
+timestamp & \en{ISO-8601 UTC} & כן & חותמת זמן יצירה מדויקת לצורך סדר כרונולוגי, מדידת שיהוי ו-\en{Audit Trail}. \\
+\hline
+payload & \en{UTF-8 Text/File} & כן & תוכן המשימה או התשובה; תוצרים ארוכים או דו-כיווניים מועברים דרך \code{--file answer.md}. \\
+\hline
+ttl\_sec & \en{Integer} & לא & זמן חיים מרבי להודעה בתור (ברירת מחדל: 600 שניות) לפני העברה ל-\en{Dead-Letter Queue}. \\
+\hline
+\end{tabularx}
+\caption{סכמת מעטפת ההודעה ברכזת הסוכנים}
+\label{tab:msg-schema}
+\end{table}
+
+\subsection{חוזי ממשק \en{CLI / API} של הרכזת (\en{Hub API Contracts})}
+
+\begin{longtable}{|>{\bfseries\ttfamily}p{2.3cm}|p{3.9cm}|p{3.5cm}|p{4.8cm}|}
+\caption{חוזי ה-\en{API} של פקודות \code{agymesh.exe}}
+\label{tab:api-contracts} \\
+\hline
+\rowcolor{pdrSecondary!15}
+\textbf{פקודה} & \textbf{פרמטרים נדרשים} & \textbf{פלט צפוי (הצלחה)} & \textbf{התנהגות במקרה שגיאה / קצה} \\
+\hline
+\endfirsthead
+\hline
+\rowcolor{pdrSecondary!15}
+\textbf{פקודה} & \textbf{פרמטרים נדרשים} & \textbf{פלט צפוי (הצלחה)} & \textbf{התנהגות במקרה שגיאה / קצה} \\
+\hline
+\endhead
+\hline
+\endfoot
+join & \code{--name <agent>} & \code{JOINED as '<agent>'. Other sessions online: ...} & אם השם תפוס על ידי תהליך חי אחר, מחזיר \code{ERROR} או מרענן רישום קיים. \\
+\hline
+wait & \code{--name <agent>} & בלוק \code{MESSAGE id=... kind=...} או \code{NO\_MESSAGE} (אחרי 240 שניות). & חסימה אסינכרונית תקינה; ב-\code{NO\_MESSAGE} הסוכן חוזר מיידית להאזנה ללא תגובה. \\
+\hline
+reply & \code{--name <agent> --id <id> (--text <t> | --file <f>)} & \code{REPLIED to <id>.} & אכיפת \en{Exactly-Once}: תשובה כפולה לאותו \code{id} נדחית; קובץ חסר מחזיר \code{ERROR}. \\
+\hline
+ping-all & \code{--name <agent> --reply-to <id>} & שולח \code{ping} לכל העמיתים ומחזיר דוח זמינות לשולח \code{<id>}. & סוכן שאינו עונה תוך פסק זמן מסומן כ-\code{TIMEOUT} בדוח המסכם. \\
+\hline
+todo-claim & \code{--name <agent>} & מזהה ותוכן המשימה הבאה הפתוחה, או \code{NO\_OPEN\_TASK}. & נעילה אטומית (\en{Mutex/CAS}): מבטיח ששני סוכנים לעולם לא יקבלו אותה משימה. \\
+\hline
+todo-done & \code{--name <agent> --id <tid> --note "<summary>"} & אישור סגירת משימה ועדכון סטטוס הלוח. & דוחה סגירה של משימה שלא נתבעה על ידי אותו סוכן או שכבר נסגרה. \\
+\hline
+\end{longtable}
+
+\subsection{טופולוגיית תקשורת, תרשים רצף ומכונת מצבים}
+
+\begin{figure}[H]
+\begin{ltrtikz}
+\begin{tikzpicture}[
+  node distance=1.3cm and 1.8cm,
+  box/.style={
+    rectangle, rounded corners=4pt, draw=pdrPrimary, line width=0.9pt,
+    minimum width=2.7cm, minimum height=1.0cm, align=center,
+    font=\sffamily\footnotesize, fill=white, blur shadow={shadow blur steps=4}
+  },
+  hub/.style={
+    rectangle, rounded corners=6pt, draw=pdrSecondary, line width=1.2pt,
+    minimum width=3.8cm, minimum height=1.8cm, align=center,
+    font=\sffamily\small\bfseries, fill=pdrSecondary!12, blur shadow={shadow blur steps=5}
+  },
+  board/.style={
+    cylinder, shape border rotate=90, aspect=0.25,
+    draw=pdrAccent, line width=1pt, fill=pdrAccent!12,
+    minimum width=2.8cm, minimum height=1.2cm, align=center,
+    font=\sffamily\footnotesize\bfseries
+  },
+  msg/.style={-{Stealth[length=2.4mm]}, line width=0.85pt, draw=pdrPrimary},
+  rep/.style={-{Stealth[length=2.4mm]}, line width=0.85pt, dashed, draw=pdrAccent}
+]
+  \node[box, fill=pdrPrimary!12] (master) {\textbf{Master Orchestrator}\\ \scriptsize(\texttt{master})};
+  \node[hub, right=2.1cm of master] (hub) {AGY Mesh Hub\\ \footnotesize\normalfont Message Queues\\ \footnotesize\normalfont Routing \& Locking};
+  \node[board, above=1.2cm of hub] (todo) {Shared TODO\\Board};
+
+  \node[box, above right=0.5cm and 2.1cm of hub] (arch) {\textbf{architect}\\ \scriptsize 5-Layer / LaTeX / TikZ};
+  \node[box, right=2.1cm of hub] (sim) {\textbf{theory / simulator}\\ \scriptsize Proofs \& Models};
+  \node[box, below right=0.5cm and 2.1cm of hub] (red) {\textbf{redteam}\\ \scriptsize Security \& Audit};
+
+  \draw[msg] (master.north east) -- node[above, font=\scriptsize\ttfamily] {task (id)} (hub.north west);
+  \draw[rep] (hub.south west) -- node[below, font=\scriptsize\ttfamily] {reply (answer.md)} (master.south east);
+  \draw[msg] (hub.north) -- node[right, font=\scriptsize\ttfamily] {claim / done} (todo.south);
+
+  \draw[msg] (hub.east) -- node[above, sloped, font=\scriptsize\ttfamily] {wait / task} (arch.west);
+  \draw[msg] (hub.east) -- node[above, font=\scriptsize\ttfamily] {wait / task} (sim.west);
+  \draw[msg] (hub.east) -- node[below, sloped, font=\scriptsize\ttfamily] {wait / task} (red.west);
+\end{tikzpicture}
+\end{ltrtikz}
+\caption{טופולוגיית התקשורת וזרימת ההודעות ברכזת הסוכנים הרב-סוכנית}
+\label{fig:hub-topology}
+\end{figure}
+
+\begin{figure}[H]
+\begin{ltrtikz}
+\begin{tikzpicture}[
+  font=\sffamily\scriptsize,
+  actor/.style={rectangle, rounded corners=3pt, draw=pdrPrimary, fill=pdrPrimary!12, minimum width=2.4cm, minimum height=0.7cm, align=center, font=\sffamily\footnotesize\bfseries},
+  call/.style={-{Stealth[length=2.2mm]}, line width=0.85pt, draw=pdrPrimary},
+  ret/.style={-{Stealth[length=2.2mm]}, line width=0.85pt, dashed, draw=pdrAccent}
+]
+  \node[actor] (M) at (0,0) {Master};
+  \node[actor] (H) at (4.2,0) {Mesh Hub};
+  \node[actor] (A) at (8.4,0) {Architect};
+  \node[actor] (T) at (12.2,0) {TODO Board};
+
+  \foreach \x in {0,4.2,8.4,12.2} {
+    \draw[pdrBorder, line width=0.9pt] (\x,-0.35) -- (\x,-6.8);
+  }
+
+  \draw[call] (8.4,-0.9) -- node[above] {\texttt{join --name architect}} (4.2,-0.9);
+  \draw[ret]  (4.2,-1.4) -- node[above] {\texttt{JOINED (peers list)}} (8.4,-1.4);
+  \draw[call] (8.4,-2.0) -- node[above] {\texttt{wait --name architect} (blocking)} (4.2,-2.0);
+  \draw[call] (0,-2.6)   -- node[above] {\texttt{send task (id=416e...)}} (4.2,-2.6);
+  \draw[ret]  (4.2,-3.2) -- node[above] {\texttt{MESSAGE id=416e... kind=task}} (8.4,-3.2);
+  \draw[call] (8.4,-3.9) -- node[above] {\texttt{todo-claim} (atomic)} (12.2,-3.9);
+  \draw[ret]  (12.2,-4.4)-- node[above] {\texttt{TASK\_ID / NO\_OPEN\_TASK}} (8.4,-4.4);
+  \draw[call] (8.4,-5.2) -- node[above] {\texttt{reply --id 416e... --file answer.md}} (4.2,-5.2);
+  \draw[ret]  (4.2,-5.8) -- node[above] {\texttt{DELIVERED reply (answer.md)}} (0,-5.8);
+  \draw[call] (8.4,-6.4) -- node[above] {\texttt{wait --name architect} (loop)} (4.2,-6.4);
+\end{tikzpicture}
+\end{ltrtikz}
+\caption{תרשים רצף (\en{Sequence Diagram}) של מחזור טיפול במשימה דרך הרכזת}
+\label{fig:hub-sequence}
+\end{figure}
+
+\begin{figure}[H]
+\begin{ltrtikz}
+\begin{tikzpicture}[
+  node distance=1.4cm and 1.9cm,
+  state/.style={rectangle, rounded corners=8pt, draw=pdrPrimary, line width=0.9pt, fill=white, minimum width=2.4cm, minimum height=0.85cm, align=center, font=\sffamily\footnotesize\bfseries, blur shadow={shadow blur steps=3}},
+  trans/.style={-{Stealth[length=2.2mm]}, line width=0.85pt, draw=pdrSecondary}
+]
+  \node[state, fill=pdrPrimary!12] (BOOT) {BOOT / JOIN};
+  \node[state, fill=pdrSecondary!14, right=of BOOT] (WAIT) {LISTENING\\(\texttt{wait})};
+  \node[state, fill=pdrAccent!14, right=of WAIT] (EXEC) {EXECUTING\\(\texttt{task}/\texttt{ping})};
+  \node[state, fill=pdrLightBg, below=of EXEC] (REPLY) {REPLYING\\(\texttt{reply})};
+  \node[state, fill=pdrWarn!14, below=of WAIT] (ERR) {ERROR\\REPORT};
+
+  \draw[trans] (BOOT) -- node[above, font=\scriptsize\ttfamily] {JOINED} (WAIT);
+  \draw[trans] (WAIT) edge[loop above] node[font=\scriptsize\ttfamily] {NO\_MESSAGE} (WAIT);
+  \draw[trans] (WAIT) -- node[above, font=\scriptsize\ttfamily] {MESSAGE} (EXEC);
+  \draw[trans] (EXEC) -- node[right, font=\scriptsize\ttfamily] {answer.md} (REPLY);
+  \draw[trans] (REPLY.west) -| node[pos=0.25, below, font=\scriptsize\ttfamily] {REPLIED} (WAIT.south);
+  \draw[trans] (EXEC) -- node[above, sloped, font=\scriptsize\ttfamily] {ERROR} (ERR);
+  \draw[trans] (ERR) -- node[left, font=\scriptsize\ttfamily] {recover} (WAIT);
+\end{tikzpicture}
+\end{ltrtikz}
+\caption{מכונת המצבים (\en{State Machine}) של סוכן פעיל בלולאת ההאזנה}
+\label{fig:agent-fsm}
+\end{figure}
+
+% ==============================================================================
+\section{מודלי נתונים וארכיטקטורת התמדה (\en{Data Models \& Persistence})}
+\label{sec:data-models}
+% ==============================================================================
+
+שכבת ההתמדה (שכבה 1) מנהלת חמש ישויות לוגיות עיקריות המבטיחות עקביות מצב, עקיבות מלאה ותמיכה בשחזור לאחר תקלה:
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.22}
+\begin{tabularx}{\textwidth}{|>{\bfseries}p{2.7cm}|p{2.6cm}|X|p{2.5cm}|}
+\hline
+\rowcolor{pdrPrimary!15}
+\textbf{ישות} & \textbf{מפתח ראשי} & \textbf{שדות עיקריים וקשרים} & \textbf{אחסון ועמידות} \\
+\hline
+AgentSession & \code{agent\_name} & \code{pid}, \code{status} (\code{online}/\code{waiting}/\code{busy}), \code{last\_seen\_utc}, \code{workspace\_path} & בזיכרון + צילום מצב (\en{Snapshot}) \\
+\hline
+MessageRecord & \code{msg\_id} & \code{kind}, \code{from}, \code{to}, \code{payload\_ref}, \code{state} (\code{queued}/\code{delivered}/\code{replied}), \code{created\_at} & יומן \en{Append-Only} (\code{JSONL}) \\
+\hline
+TodoItem & \code{task\_id} & \code{title}, \code{description}, \code{status} (\code{open}/\code{claimed}/\code{done}), \code{owner\_agent}, \code{result\_note} & נעילה אטומית על קובץ/DB \\
+\hline
+ArtifactFile & \code{sha256\_hash} & \code{file\_path}, \code{agent\_name}, \code{mime\_type}, \code{encoding} (\code{UTF-8}), \code{version}, \code{updated\_at} & מערכת קבצים מקומית \\
+\hline
+AuditEvent & \code{event\_id} & \code{timestamp}, \code{actor}, \code{action}, \code{target\_id}, \code{latency\_ms}, \code{exit\_code} & קובצי לוג מתגלגלים \\
+\hline
+\end{tabularx}
+\caption{מודל הנתונים הלוגי של רכזת הסוכנים ומאגר התוצרים}
+\label{tab:data-model}
+\end{table}
+
+\begin{archbox}{אחריות שמירת קידוד \en{UTF-8 BiDi}}
+כלל קובצי המקור (\code{.cls}, \code{.tex}) וקובצי התשובה (\code{answer.md}) נשמרים בקידוד \code{UTF-8} ללא \en{BOM}, עם סיומות שורה אחידות. העברת תוכן עברי דרך דגל \code{--file} מונעת שיבושי קידוד של שורת הפקודה ב-\en{Windows PowerShell} ומבטיחה שלמות תווים מקצה לקצה.
+\end{archbox}
+
+% ==============================================================================
+\section{דרישות פונקציונליות מפורטות (\en{Functional Requirements: FR-01 to FR-20})}
+\label{sec:fr-spec}
+% ==============================================================================
+
+הטבלה שלהלן מפרטת את 20 הדרישות הפונקציונליות של המערכת, מדורגות לפי מתודולוגיית \en{MoSCoW} ומלוות בשיטת אימות מוגדרת.
+
+\begin{longtable}{|>{\bfseries\ttfamily}p{1.4cm}|p{2.3cm}|p{7.6cm}|p{1.3cm}|p{1.8cm}|}
+\caption{מפרט מלא של דרישות פונקציונליות (\en{FR-01} עד \en{FR-20})}
+\label{tab:fr-full} \\
+\hline
+\rowcolor{pdrPrimary!15}
+\textbf{מזהה} & \textbf{קטגוריה} & \textbf{תיאור הדרישה וקריטריון קבלה} & \textbf{עדיפות} & \textbf{אימות} \\
+\hline
+\endfirsthead
+\hline
+\rowcolor{pdrPrimary!15}
+\textbf{מזהה} & \textbf{קטגוריה} & \textbf{תיאור הדרישה וקריטריון קבלה} & \textbf{עדיפות} & \textbf{אימות} \\
+\hline
+\endhead
+\hline
+\endfoot
+FR-01 & רישום & הרכזת תאפשר לסוכן להצטרף (\code{join --name}) ולקבל רשימת עמיתים פעילים תוך פחות מ-1 שנייה. & Must & בדיקת יחידה \\
+\hline
+FR-02 & ניתוב & תמיכה מלאה בסוגי הודעות \code{ping}, \code{meshcheck} ו-\code{task} עם התאמה חד-חד-ערכית לפי \code{id}. & Must & אינטגרציה \\
+\hline
+FR-03 & האזנה & פקודת \code{wait} תחסום עד להגעת הודעה או פקיעת זמן (240 שניות) ותחזיר \code{NO\_MESSAGE} בקוד יציאה 0. & Must & אינטגרציה \\
+\hline
+FR-04 & קבצי תשובה & תמיכה בתשובה מבוססת קובץ (\code{--file answer.md}) בקידוד \code{UTF-8} מלא לעברית וקוד \en{LaTeX}. & Must & בדיקת מערכת \\
+\hline
+FR-05 & לוח משימות & פקודת \code{todo-claim} תבצע נעילה אטומית כך ששני סוכנים לעולם לא יקבלו את אותה משימה. & Must & בדיקת עומס \\
+\hline
+FR-06 & סגירת משימה & פקודת \code{todo-done} תעדכן סטטוס משימה בלוח עם הערת סיכום ותמנע סגירה כפולה. & Must & בדיקת יחידה \\
+\hline
+FR-07 & בדיקת רשת & פקודת \code{meshcheck} תפעיל \code{ping-all} ותחזיר דוח זמינות מלא של כלל הסוכנים המחוברים. & Must & אינטגרציה \\
+\hline
+FR-08 & תגובת חיות & בעת קבלת \code{kind=ping}, הסוכן ישיב מיידית \code{PONG <agent>} עם אותו \code{id}. & Must & בדיקת יחידה \\
+\hline
+FR-09 & מחלקת \en{LaTeX} & מחלקת \code{pdr\_hebrew.cls} תספק תמיכה מובנית בעברית ראשית ואנגלית משנית תחת \code{LuaLaTeX}. & Must & הידור \en{PDF} \\
+\hline
+FR-10 & תרשימי \en{TikZ} & סביבת \code{ltrtikz} תבודד תרשימי \en{TikZ} בכיוון \en{LTR} ותמנע היפוך צירים או טקסט ב-\en{BiDi}. & Must & הידור \en{PDF} \\
+\hline
+FR-11 & טבלאות ארוכות & תמיכה מלאה ב-\code{longtable} ו-\code{tabularx} לשבירת עמודים אוטומטית עם כותרות חוזרות. & Must & הידור \en{PDF} \\
+\hline
+FR-12 & תיבות הדגשה & סביבת \code{archbox} תציג תיבות הנדסיות מובלטות עם כותרת עברית ורקע אחיד. & Should & סקירה חזותית \\
+\hline
+FR-13 & הפרדת שכבות & כל שכבה ב-5 השכבות תחשוף ממשק מתועד ללא גישה ישירה בין שכבות לא סמוכות. & Must & סקירת תכן \\
+\hline
+FR-14 & בידוד עבודה & כל סוכן ישמור תוצרים אך ורק בתיקיית העבודה המוקצית לו (\code{agents/<name>/}). & Must & ביקורת אבטחה \\
+\hline
+FR-15 & שפת טרמינל & כלל הודעות הצ'אט בטרמינל יופקו באנגלית תמציתית בלבד; עברית תיכתב אך ורק לקבצים. & Must & בדיקת ממשק \\
+\hline
+FR-16 & תיוג עמודים & כותרות עליונות ותחתונות (\code{fancyhdr}) יציגו שם מסמך ומספור עמודים עקבי בכל עמוד. & Should & הידור \en{PDF} \\
+\hline
+FR-17 & קישורים פנימיים & חבילת \code{hyperref} תאפשר ניווט פנימי לחיץ בין תוכן העניינים, פרקים, טבלאות ותרשימים. & Should & הידור \en{PDF} \\
+\hline
+FR-18 & ניהול תור \en{FIFO} & הרכזת תמסור הודעות ממתינות לכל סוכן בסדר הגעתן הכרונולוגי ללא אובדן הודעות. & Must & אינטגרציה \\
+\hline
+FR-19 & התאוששות לולאה & במקרה של פלט \code{ERROR} מפקודת רכזת, הסוכן ידווח פעם אחת ויחזור ללולאת \code{wait}. & Must & הזרקת תקלה \\
+\hline
+FR-20 & אינטגרציית דוח & קובץ \code{sec\_architecture.tex} יהיה מודולרי וניתן להכללה ישירה (\code{\textbackslash input}) בתוך \code{main.tex}. & Must & הידור \en{PDF} \\
+\hline
+\end{longtable}
+
+% ==============================================================================
+\section{דרישות לא-פונקציונליות (\en{Non-Functional Requirements: NFR-01 to NFR-15})}
+\label{sec:nfr-spec}
+% ==============================================================================
+
+\begin{longtable}{|>{\bfseries\ttfamily}p{1.5cm}|p{2.3cm}|p{7.5cm}|p{1.3cm}|p{1.8cm}|}
+\caption{מפרט מלא של דרישות לא-פונקציונליות (\en{NFR-01} עד \en{NFR-15})}
+\label{tab:nfr-full} \\
+\hline
+\rowcolor{pdrSecondary!15}
+\textbf{מזהה} & \textbf{קטגוריה} & \textbf{מדד ביצועים / אילוץ ושיטת מדידה} & \textbf{עדיפות} & \textbf{אימות} \\
+\hline
+\endfirsthead
+\hline
+\rowcolor{pdrSecondary!15}
+\textbf{מזהה} & \textbf{קטגוריה} & \textbf{מדד ביצועים / אילוץ ושיטת מדידה} & \textbf{עדיפות} & \textbf{אימות} \\
+\hline
+\endhead
+\hline
+\endfoot
+NFR-01 & שיהוי & שיהוי העברת הודעה דרך הרכזת המקומית לא יעלה על \en{150 ms} באחוזון ה-95 (\en{P95}). & Must & סימולציה \\
+\hline
+NFR-02 & תפוקה & הרכזת תתמוך בעיבוד של לפחות 50 הודעות בשנייה תחת עומס מקבילי ללא שגיאות תור. & Should & בדיקת עומס \\
+\hline
+NFR-03 & מדרגיות & תמיכה בעד 16 סוכנים פעילים במקביל ללא ירידה בביצועים או נעילות מתות (\en{Deadlocks}). & Must & בדיקת עומס \\
+\hline
+NFR-04 & אידמפוטנטיות & כל הודעה תיענה בדיוק פעם אחת (\en{Exactly-Once}) עם אותו \code{id}, ללא זיוף תשובות. & Must & אינטגרציה \\
+\hline
+NFR-05 & זמינות רכזת & זמינות שירות הרכזת לאורך סשן עבודה מלא תעמוד על 99.9\% לפחות ללא קריסות זיכרון. & Must & בדיקת יציבות \\
+\hline
+NFR-06 & תאימות \en{MiKTeX} & הידור נקי ב-\code{LuaLaTeX} תחת \en{Windows MiKTeX} עם גופני מערכת סטנדרטיים (\code{David}, \code{Arial}, \code{Consolas}). & Must & הידור \en{PDF} \\
+\hline
+NFR-07 & בידוד אבטחה & אפס גישה בלתי מורשית לקבצים מחוץ לתיקיית הסוכן ואפס הפעלה של תהליכי \code{agy} נוספים. & Must & ביקורת \code{redteam} \\
+\hline
+NFR-08 & שלמות \en{UTF-8} & 100\% שמירה על תווים עבריים, ניקוד וסימני פיסוק במעבר מ-\code{answer.md} לדוח ה-\en{PDF}. & Must & בדיקת קידוד \\
+\hline
+NFR-09 & זמן התאוששות & זמן שחזור (\en{RTO}) של סוכן שנפל וחזר ל-\code{join}/\code{wait} לא יעלה על 5 שניות. & Should & הזרקת תקלה \\
+\hline
+NFR-10 & אובדן מידע & יעד אובדן מידע (\en{RPO}) של אפס הודעות מאושרות הודות לכתיבה ליומן \en{Append-Only}. & Must & הזרקת תקלה \\
+\hline
+NFR-11 & צריכת משאבים & תהליך הרכזת יצרוך פחות מ-\en{150 MB} זיכרון \en{RAM} ופחות מ-5\% \en{CPU} במצב המתנה. & Should & ניטור מערכת \\
+\hline
+NFR-12 & תצפיתיות & 100\% מההודעות והתגובות יתועדו עם חותמת זמן \en{UTC}, מזהה שולח וסטטוס ביצוע. & Must & בדיקת יומנים \\
+\hline
+NFR-13 & תחזוקתיות & קוד ה-\en{LaTeX} והמחלקה יהיו מחולקים למודולים ברורים עם הערות תיעוד באנגלית/עברית. & Should & סקירת קוד \\
+\hline
+NFR-14 & דטרמיניזם & הידור חוזר של אותם קובצי מקור יפיק מבנה \en{PDF} זהה לחלוטין ללא שינויי עימוד אקראיים. & Must & בדיקת רגרסיה \\
+\hline
+NFR-15 & זמן הידור & זמן הידור מלא של דוח בן 40 עמודים ב-\code{LuaLaTeX} (שני מעברים) לא יעלה על 45 שניות. & Should & מדידת זמנים \\
+\hline
+\end{longtable}
+
+% ==============================================================================
+\section{ניתוח מצבי כשל והתאוששות (\en{Failure Modes, FMEA \& Recovery})}
+\label{sec:fmea-recovery}
+% ==============================================================================
+
+להבטחת חוסן המערכת הרב-סוכנית, בוצע ניתוח מצבי כשל והשפעותיהם (\en{FMEA}) לכלל רכיבי הליבה, תוך הגדרת מנגנוני זיהוי, בלימה והתאוששות אוטומטית.
+
+\begin{longtable}{|p{2.5cm}|p{3.0cm}|p{2.8cm}|p{3.5cm}|p{2.3cm}|}
+\caption{מטריצת מצבי כשל, השפעה והתאוששות (\en{FMEA})}
+\label{tab:fmea} \\
+\hline
+\rowcolor{pdrWarn!18}
+\textbf{מצב כשל} & \textbf{גורם שורש} & \textbf{השפעה על המערכת} & \textbf{מנגנון זיהוי ובלימה} & \textbf{התאוששות / \en{RTO}} \\
+\hline
+\endfirsthead
+\hline
+\rowcolor{pdrWarn!18}
+\textbf{מצב כשל} & \textbf{גורם שורש} & \textbf{השפעה על המערכת} & \textbf{מנגנון זיהוי ובלימה} & \textbf{התאוששות / \en{RTO}} \\
+\hline
+\endhead
+\hline
+\endfoot
+קריסת סוכן במהלך \code{task} & חריגת זיכרון או ניתוק רשת מול מודל השפה & המשימה נתקעת ללא \code{reply} עד פקיעת \en{TTL} & בדיקת \code{meshcheck} וזיהוי \en{Timeout} ב-\code{master} & הפעלה מחדש, \code{join} ושליחה חוזרת (\en{< 10s}) \\
+\hline
+תנאי מרוץ ב-\code{todo-claim} & שני סוכנים תובעים משימה באותה מילישנייה & סיכון לעבודה כפולה ודריסת קבצים & נעילה אטומית (\en{Mutex}) בשרת הרכזת & מניעה מובנית; אפס עבודה כפולה \\
+\hline
+קריסת שרת הרכזת & הפסקת תהליך פתאומית במערכת ההפעלה & אובדן קישוריות זמני לכלל הסוכנים & פקודות \code{wait} מחזירות \code{ERROR} מיידי & הפעלת רכזת משחזור יומן \en{JSONL} (\en{< 5s}) \\
+\hline
+שיבוש קידוד עברית/\en{BiDi} & העברת עברית ישירות ב-\code{--text} בטרמינל & טקסט הפוך או תווי ג'יבריש בדוח & אכיפת \code{--file answer.md} בקידוד \code{UTF-8} & יצירה מחדש של קובץ התשובה \\
+\hline
+כשל הידור \code{LuaLaTeX} & חבילה חסרה או תרשים \en{TikZ} מחוץ ל-\code{ltrtikz} & אי-הפקת קובץ \en{PDF} סופי & בדיקת לוג הידור אוטומטית (\code{-interaction=nonstopmode}) & תיקון ממוקד והידור חוזר (\en{< 30s}) \\
+\hline
+סופת הודעות (\en{Message Storm}) & לולאה אינסופית של שליחת משימות & רוויה של תור ההודעות ועליית שיהוי & מגבלת קצב (\en{Rate Limit}) ו-\en{TTL} לכל הודעה & העברה ל-\en{Dead-Letter Queue} וניקוי תור \\
+\hline
+\end{longtable}
+
+% ==============================================================================
+\section{ארכיטקטורת אבטחה, בידוד וממשל (\en{Security \& Governance Architecture})}
+\label{sec:security-arch}
+% ==============================================================================
+
+ארכיטקטורת האבטחה מבוססת על עקרון ההגנה לעומק (\en{Defense-in-Depth}) והרשאה מזערית (\en{Principle of Least Privilege}) לרוחב כל חמש השכבות:
+
+\begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=1.2cm]
+  \item \textbf{מודל איומים (\en{Threat Model}):} האיומים המרכזיים המזוהים במערכת רב-סוכנית מקומית הם: הזרקת הנחיות (\en{Prompt Injection}) דרך תוכן משימות, פריצת תיקיית עבודה (\en{Path Traversal}), התחזות לסוכן אחר (\en{Agent Spoofing}), והפעלה בלתי מורשית של תהליכי משנה.
+  \item \textbf{בידוד רשת ותהליכים (\en{Process \& Network Isolation}):} הרכזת מאזינה אך ורק בממשק המקומי (\code{127.0.0.1}), ללא חשיפה לאינטרנט. סוכנים מנועים מלהפעיל סשנים חדשים של \code{agy} או לסרוק קבצי מערכת מחוץ לתיקייתם.
+  \item \textbf{שלמות זהות ואימות הודעות (\en{Identity \& Reply Integrity}):} כל סוכן מורשה להשיב אך ורק להודעות שהופנו אל שמו הרשום ועם אותו \code{id}. זיוף \code{PONG} או תשובה בשם סוכן אחר נחסם ברמת הרכזת ומתועד כחריגת אבטחה.
+  \item \textbf{בקרת תוצרים וביקורת (\en{Auditability \& Compliance}):} כל פעולת כתיבה, תביעת משימה או תשובה מתועדת ביומן בלתי ניתן לשינוי (\en{Append-Only Audit Log}), המאפשר לסוכן \code{redteam} ול-\code{master} לבצע ביקורת מלאה על תקינות התהליך.
+\end{enumerate}
+
+\begin{archbox}{סיכום מוכנות לשלב התכנון המפורט (\en{PDR Readiness Summary})}
+הארכיטקטורה המוצגת במסמך זה מספקת בסיס הנדסי שלם, מודולרי ומדיד להקמת מערכת רב-סוכנית מבוססת \en{AGY Mesh}. הפרדת חמש השכבות, חוזי ה-\en{API} המפורטים, 35 דרישות \en{FR/NFR} מדידות, ניתוח ה-\en{FMEA} וארכיטקטורת האבטחה מאפשרים מעבר ישיר ובטוח לשלב התכנון המפורט (\en{CDR}) והמימוש המלא.
+\end{archbox}

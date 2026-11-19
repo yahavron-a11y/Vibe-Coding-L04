@@ -1,0 +1,20 @@
+Powershell
+cd C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\agy-multi-agent-mesh
+
+C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\agy-multi-agent-mesh [main ≡ +0 ~4 -0 !]> uv run agymesh --team "C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\Vibe-Coding-L04\team.json" init
+wrote C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\L04\agents\master\AGY.md
+wrote C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\L04\agents\theory\AGY.md
+wrote C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\L04\agents\architect\AGY.md
+wrote C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\L04\agents\simulator\AGY.md
+wrote C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\L04\agents\redteam\AGY.md
+C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\agy-multi-agent-mesh [main ≡ +0 ~4 -0 !]>uv run agymesh --team "C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\Vibe-Coding-L04\team.json" up --with-master
+
+C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\agy-multi-agent-mesh [main ≡ +0 ~4 -0 !]> uv run agymesh --team "C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\Vibe-Coding-L04\team.json" up --with-master
+Hub was already running - reusing it.
+Wrote instructions:
+  C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\L04\agents\master\AGY.md
+  C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\L04\agents\theory\AGY.md
+  C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\L04\agents\architect\AGY.md
+  C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\L04\agents\simulator\AGY.md
+  C:\Users\ron\OneDrive - University of Haifa\SecondYear\MyProjects\L04\agents\redteam\AGY.md
+Opened agy windows for: theory, architect, simulator, redteam, master. Each one joins the mesh and starts listening by itself.
